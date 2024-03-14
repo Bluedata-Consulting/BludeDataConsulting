@@ -237,14 +237,15 @@ const Form = () => {
                       onChange={handleCaptchaChange}
                     /> */}
                   </div>
-
-                  <button
-                    type="submit"
-                    disabled={!captchaValue}
-                    className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-shade-4 rounded-md hover:bg-blue-shade-5 hover:text-blue-shade-2 focus:outline-none focus:ring focus:ring-gray-400 focus:ring-opacity-50"
-                  >
-                    Submit
-                  </button>
+                  <div className="flex justify-center">
+                    <button
+                      type="submit"
+                      disabled={!captchaValue}
+                      className="w-[20%] px-4 py-2 mt-6 text-[18px] font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-shade-4 rounded-md hover:bg-blue-shade-5 hover:text-blue-shade-2 focus:outline-none focus:ring focus:ring-gray-400 focus:ring-opacity-50"
+                    >
+                      Submit
+                    </button>
+                  </div>
                 </form>
               </div>
             </div>

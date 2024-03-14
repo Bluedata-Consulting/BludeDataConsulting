@@ -10,14 +10,14 @@ const Section = () => {
               <h2 className="text-2xl font-bold text-gray-800 sm:text-3xl">
                 About the company
               </h2>
-              <p className="mt-4 text-gray-600 text-[18px]">
+              <p className="mt-4 text-gray-600 text-[18px] leading-7">
                 We are a technology consulting company operating in South East
                 Asia, the Indian subcontinent, and the Middle East region. We
                 are passionate about taking on immense challenges that matter to
                 our clients and helping them in optimizing business processes,
                 reducing costs, and improving profits.
               </p>
-              <p className="mt-4 text-gray-600 text-[18px]">
+              <p className="mt-4 text-gray-600 text-[18px] leading-7">
                 We work very closely with our clients and help them in building
                 their capabilities and leadership skills at every level and
                 every opportunity. For ongoing projects of our clients, we
@@ -30,7 +30,7 @@ const Section = () => {
               <img
                 src="https://images.unsplash.com/photo-1531973576160-7125cd663d86"
                 alt=""
-                className="object-cover rounded-lg shadow-md"
+                className="object-cover scale-90 md:scale-110 lg:scale-75 rounded-lg shadow-md"
               />
             </div>
           </div>
@@ -40,10 +40,11 @@ const Section = () => {
       <div className="py-16 bg-white">
         <div className="container mx-auto px-6 text-gray-600 md:px-12 xl:px-6">
           <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
-            <div className="md:w-5/12 lg:w-5/12">
+            <div className="md:w-5/12 lg:w-5/12 md:mr-4 mr-0">
               <img
                 src="https://tailus.io/sources/blocks/left-image/preview/images/startup.png"
                 alt=""
+                className="object-cover md:scale-125 lg:scale-100 "
                 loading="lazy"
               />
             </div>
@@ -99,7 +100,7 @@ const Section = () => {
               <img
                 src="https://images.unsplash.com/photo-1531973576160-7125cd663d86"
                 alt=""
-                className="object-cover rounded-lg shadow-md"
+                className="object-cover scale-90 md:scale-110 lg:scale-75 rounded-lg shadow-md"
               />
             </div>
           </div>
