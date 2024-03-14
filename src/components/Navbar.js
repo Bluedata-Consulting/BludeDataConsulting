@@ -84,7 +84,7 @@ const Header = () => {
   const insightDropdownContainerRef = useRef();
   return (
     <div>
-      <header className="w-full bg-blue-shade-5/85 px-4 py-2">
+      <header className="w-full bg-blue-shade-5/90 px-4 py-2">
         <div className="mx-auto flex max-w-7xl items-center justify-between py-2">
           {/* Logo and brand name */}
           <Link
@@ -146,7 +146,7 @@ const Header = () => {
                 {isExpertiseOpen && (
                   <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-blue-shade-5">
                     <Link
-                      to="/consulting"
+                      to="/techconsulting"
                       className="block px-4 py-2 font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 hover:text-lg hover:rounded-md"
                       onClick={() => {
                         window.scroll({
@@ -392,7 +392,7 @@ const Header = () => {
                     {isExpertiseOpen && (
                       <div className="ml-4 mt-2 space-y-2">
                         <Link
-                          to="/ai"
+                          to="/techconsulting"
                           className="block text-lg text-blue-shade-1"
                           onClick={() => {
                             window.scroll({
@@ -406,7 +406,7 @@ const Header = () => {
                           Technology Consulting
                         </Link>
                         <Link
-                          to="/blockchain"
+                          to="/analytics"
                           className="block text-lg text-blue-shade-1"
                           onClick={() => {
                             window.scroll({
@@ -420,7 +420,7 @@ const Header = () => {
                           Analytics & AI Solution
                         </Link>
                         <Link
-                          to="/cloud"
+                          to="/scaling"
                           className="block text-lg text-blue-shade-1"
                           onClick={() => {
                             window.scroll({

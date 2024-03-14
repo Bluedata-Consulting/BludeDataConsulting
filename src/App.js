@@ -4,6 +4,9 @@ import Homepage from "./pages/Homepage/Homepage";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Team from "./pages/Contact/Team";
+import Tech from "./pages/Tech/Tech";
+import Scaling from "./pages/Scaling/Scaling";
+import Analytics from "./pages/Analytics/Analytics";
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/techconsulting" element={<Tech />} />
+          <Route path="/scaling" element={<Scaling />} />
+          <Route path="/analytics" element={<Analytics />} />
         </Routes>
       </Router>
     </>
