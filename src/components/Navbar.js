@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   const handleDropdownHover = (dropdownType) => {
-    closeDropdowns();
+    closeDropdowns(); // Close other dropdowns
     switch (dropdownType) {
       case "expertise":
         setIsExpertiseOpen(true);
@@ -34,6 +34,7 @@ const Header = () => {
     const dropdownContainer = dropdownContainerRef.current;
 
     if (dropdownContainer) {
+      // Delay closing the dropdown to check if the pointer is still inside
       setTimeout(() => {
         const isPointerInside =
           dropdownContainer.matches(":hover") ||
@@ -44,7 +45,7 @@ const Header = () => {
         if (!isPointerInside) {
           setDropdownOpen(false);
         }
-      }, 100);
+      }, 100); // Adjust the delay as needed
     } else {
       setDropdownOpen(false);
     }
@@ -83,8 +84,8 @@ const Header = () => {
   const industriesDropdownContainerRef = useRef();
   const insightDropdownContainerRef = useRef();
   return (
-    <div>
-      <header className="w-full bg-blue-shade-5/90 px-4 py-2">
+    <div className="relative top-0 z-50">
+      <header className="absolute w-full bg-blue-shade-2/85 px-4 py-2">
         <div className="mx-auto flex max-w-7xl items-center justify-between py-2">
           {/* Logo and brand name */}
           <Link
@@ -101,7 +102,7 @@ const Header = () => {
             <span>
               <img src="logo35.png" alt="" className="" />
             </span>
-            <span className="font-bold text-blue-shade-1">
+            <span className="font-bold text-white hover:text-blue-shade-5">
               BLUE DATA CONSULTING
             </span>
           </Link>
@@ -111,7 +112,7 @@ const Header = () => {
               <li>
                 <Link
                   to="/"
-                  className="text-md font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4"
+                  className="text-md font-semibold text-md text-white hover:text-blue-shade-5"
                   onClick={() => {
                     window.scroll({
                       top: 0,
@@ -135,8 +136,8 @@ const Header = () => {
                 ref={expertiseDropdownContainerRef}
                 className="relative"
               >
-                <div className="text-md cursor-pointer font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 flex items-center">
-                  Expertise
+                <div className="text-md cursor-pointer font-semibold text-md text-white hover:text-blue-shade-5 flex items-center">
+                  Services
                   {isExpertiseOpen ? (
                     <ChevronUp className="ml-2" />
                   ) : (
@@ -144,10 +145,10 @@ const Header = () => {
                   )}
                 </div>
                 {isExpertiseOpen && (
-                  <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-blue-shade-5">
+                  <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-blue-shade-2">
                     <Link
                       to="/techconsulting"
-                      className="block px-4 py-2 font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 hover:text-lg hover:rounded-md"
+                      className="block px-4 py-2 font-semibold text-md text-white hover:text-blue-shade-5"
                       onClick={() => {
                         window.scroll({
                           top: 0,
@@ -164,7 +165,7 @@ const Header = () => {
                     </Link>
                     <Link
                       to="/analytics"
-                      className="block px-4 py-2 font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 hover:text-lg hover:rounded-md"
+                      className="block px-4 py-2 font-semibold text-md text-white hover:text-blue-shade-5"
                       onClick={() => {
                         window.scroll({
                           top: 0,
@@ -181,7 +182,7 @@ const Header = () => {
                     </Link>
                     <Link
                       to="/scaling"
-                      className="block px-4 py-2 font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 hover:text-lg hover:rounded-md"
+                      className="block px-4 py-2 font-semibold text-md text-white hover:text-blue-shade-5"
                       onClick={() => {
                         window.scroll({
                           top: 0,
@@ -200,65 +201,6 @@ const Header = () => {
                 )}
               </li>
 
-              {/* <li
-                onMouseEnter={() => handleDropdownHover("industries")}
-                onMouseLeave={() =>
-                  handleDropdownLeave(
-                    industriesDropdownContainerRef,
-                    setIsIndustriesOpen
-                  )
-                }
-                ref={industriesDropdownContainerRef}
-                className="relative"
-              >
-                <div className="text-md cursor-pointer font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 flex items-center">
-                  Industries
-                  {isIndustriesOpen ? (
-                    <ChevronUp className="ml-2" />
-                  ) : (
-                    <ChevronDown className="ml-2" />
-                  )}
-                </div>
-                {isIndustriesOpen && (
-                  <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-blue-shade-5">
-                    <Link
-                      to="/telecom"
-                      className="block px-4 py-2 font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 hover:text-lg hover:rounded-md"
-                      onClick={() => {
-                        window.scroll({
-                          top: 0,
-                          left: 0,
-                          behavior: "smooth",
-                        });
-                        handleDropdownLeave(
-                          industriesDropdownContainerRef,
-                          setIsIndustriesOpen
-                        );
-                      }}
-                    >
-                      Telecom
-                    </Link>
-                    <Link
-                      to="/manufacturing"
-                      className="block px-4 py-2 font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 hover:text-lg hover:rounded-md"
-                      onClick={() => {
-                        window.scroll({
-                          top: 0,
-                          left: 0,
-                          behavior: "smooth",
-                        });
-                        handleDropdownLeave(
-                          industriesDropdownContainerRef,
-                          setIsIndustriesOpen
-                        );
-                      }}
-                    >
-                      Manufacturing
-                    </Link>
-                  </div>
-                )}
-              </li> */}
-
               <li
                 onMouseEnter={() => handleDropdownHover("insight")}
                 onMouseLeave={() =>
@@ -270,8 +212,8 @@ const Header = () => {
                 ref={insightDropdownContainerRef}
                 className="relative"
               >
-                <div className="text-md cursor-pointer font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 flex items-center">
-                  Insight
+                <div className="text-md cursor-pointer font-semibold text-md text-white hover:text-blue-shade-5 flex items-center">
+                  Insights
                   {isInsightOpen ? (
                     <ChevronUp className="ml-2" />
                   ) : (
@@ -279,10 +221,10 @@ const Header = () => {
                   )}
                 </div>
                 {isInsightOpen && (
-                  <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-blue-shade-5">
+                  <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-blue-shade-2">
                     <Link
                       to="/about"
-                      className="block px-4 py-2 font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 hover:text-lg hover:rounded-md"
+                      className="block px-4 py-2 font-semibold text-md text-white hover:text-blue-shade-5 "
                       onClick={() => {
                         window.scroll({
                           top: 0,
@@ -300,7 +242,7 @@ const Header = () => {
 
                     <Link
                       to="/team"
-                      className="block px-4 py-2 font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 hover:text-lg hover:rounded-md"
+                      className="block px-4 py-2 font-semibold text-md text-white hover:text-blue-shade-5"
                       onClick={() => {
                         window.scroll({
                           top: 0,
@@ -317,7 +259,7 @@ const Header = () => {
                     </Link>
                     <Link
                       to="/contact"
-                      className="block px-4 py-2 font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 hover:text-lg hover:rounded-md"
+                      className="block px-4 py-2 font-semibold text-md text-white hover:text-blue-shade-5"
                       onClick={() => {
                         window.scroll({
                           top: 0,
@@ -342,22 +284,22 @@ const Header = () => {
           <div className="lg:hidden">
             <Menu
               onClick={toggleMenu}
-              className="h-6 w-6 cursor-pointer text-blue-shade-1"
+              className="h-6 w-6 cursor-pointer text-white"
             />
           </div>
 
           {/* Mobile Menu */}
           {isMenuOpen && (
-            <div className="absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 transition lg:hidden bg-blue-shade-5 shadow-lg ring-1 ring-blue-shade-3 ring-opacity-5">
+            <div className="absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 transition lg:hidden bg-blue-shade-2/95 shadow-lg ring-1 ring-blue-shade-3 ring-opacity-5">
               <div className="px-5 pb-6 pt-5">
                 <div className="flex items-center justify-between pb-2">
-                  <span className="font-bold text-xl text-blue-shade-1 ">
-                    Blue Data Digital
+                  <span className="font-bold text-xl text-white hover:text-blue-shade-5">
+                    Blue Data Consulting
                   </span>
                   <div className="-mr-2">
                     <button
                       onClick={toggleMenu}
-                      className="inline-flex items-center justify-center rounded-md p-2 text-blue-shade-1 hover:text-gray-500"
+                      className="inline-flex items-center justify-center rounded-md p-2 text-white hover:text-blue-shade-5 hover:text-gray-500"
                     >
                       <X className="h-6 w-6" aria-hidden="true" />
                     </button>
@@ -366,7 +308,7 @@ const Header = () => {
                 <nav className="grid gap-y-4">
                   <Link
                     to="/"
-                    className="text-lg font-medium text-blue-shade-1"
+                    className="text-lg font-medium text-white hover:text-blue-shade-5"
                     onClick={() => {
                       window.scroll({
                         top: 0,
@@ -384,16 +326,16 @@ const Header = () => {
                       onClick={() => {
                         toggleExpertiseDropdown();
                       }}
-                      className="flex justify-between items-center w-full text-lg font-medium text-blue-shade-1"
+                      className="flex justify-between items-center w-full text-lg font-medium text-white hover:text-blue-shade-5"
                     >
-                      Expertise
+                      Services
                       {isExpertiseOpen ? <ChevronUp /> : <ChevronDown />}
                     </div>
                     {isExpertiseOpen && (
                       <div className="ml-4 mt-2 space-y-2">
                         <Link
                           to="/techconsulting"
-                          className="block text-lg text-blue-shade-1"
+                          className="block text-lg text-white hover:text-blue-shade-5"
                           onClick={() => {
                             window.scroll({
                               top: 0,
@@ -407,7 +349,7 @@ const Header = () => {
                         </Link>
                         <Link
                           to="/analytics"
-                          className="block text-lg text-blue-shade-1"
+                          className="block text-lg text-white hover:text-blue-shade-5"
                           onClick={() => {
                             window.scroll({
                               top: 0,
@@ -421,7 +363,7 @@ const Header = () => {
                         </Link>
                         <Link
                           to="/scaling"
-                          className="block text-lg text-blue-shade-1"
+                          className="block text-lg text-white hover:text-blue-shade-5 "
                           onClick={() => {
                             window.scroll({
                               top: 0,
@@ -437,66 +379,22 @@ const Header = () => {
                       </div>
                     )}
                   </div>
-                  {/* Industries Dropdown in Mobile */}
-                  {/* <div>
-                    <div
-                      onClick={() => {
-                        toggleIndustriesDropdown();
-                      }}
-                      className="flex justify-between items-center w-full text-lg font-medium text-blue-shade-1"
-                    >
-                      Industries
-                      {isIndustriesOpen ? <ChevronUp /> : <ChevronDown />}
-                    </div>
-                    {isIndustriesOpen && (
-                      <div className="ml-4 mt-2 space-y-2">
-                        <Link
-                          to="/telecom"
-                          className="block text-lg text-blue-shade-1"
-                          onClick={() => {
-                            window.scroll({
-                              top: 0,
-                              left: 0,
-                              behavior: "smooth",
-                            });
-                            closeDropdowns();
-                          }}
-                        >
-                          Telecom
-                        </Link>
-                        <Link
-                          to="/manufacturing"
-                          className="block text-lg text-blue-shade-1"
-                          onClick={() => {
-                            window.scroll({
-                              top: 0,
-                              left: 0,
-                              behavior: "smooth",
-                            });
-                            closeDropdowns();
-                          }}
-                        >
-                          Manufacturing
-                        </Link>
-                      </div>
-                    )}
-                  </div> */}
                   {/* Insight Dropdown in Mobile */}
                   <div>
                     <div
                       onClick={() => {
                         toggleInsightDropdown();
                       }}
-                      className="flex justify-between items-center w-full text-lg font-medium text-blue-shade-1"
+                      className="flex justify-between items-center w-full text-lg font-medium text-white hover:text-blue-shade-5"
                     >
-                      Insight
+                      Insights
                       {isInsightOpen ? <ChevronUp /> : <ChevronDown />}
                     </div>
                     {isInsightOpen && (
                       <div className="ml-4 mt-2 space-y-2">
                         <Link
                           to="/about"
-                          className="block text-lg text-blue-shade-1"
+                          className="block text-lg text-white hover:text-blue-shade-5"
                           onClick={() => {
                             window.scroll({
                               top: 0,
@@ -510,7 +408,7 @@ const Header = () => {
                         </Link>
                         <Link
                           to="/contact"
-                          className="block text-lg text-blue-shade-1"
+                          className="block text-lg text-white hover:text-blue-shade-5"
                           onClick={() => {
                             window.scroll({
                               top: 0,
@@ -524,7 +422,7 @@ const Header = () => {
                         </Link>
                         <Link
                           to="/team"
-                          className="block text-lg text-blue-shade-1"
+                          className="block text-lg text-white hover:text-blue-shade-5"
                           onClick={() => {
                             window.scroll({
                               top: 0,
@@ -536,9 +434,11 @@ const Header = () => {
                         >
                           Team
                         </Link>
+                        {/* Add more dropdown items as needed */}
                       </div>
                     )}
                   </div>
+                  {/* ... (existing code) */}
                 </nav>
               </div>
             </div>

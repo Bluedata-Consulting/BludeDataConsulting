@@ -1,4 +1,7 @@
 import React from "react";
+import about1 from "../../assets/about1.jpg";
+import about2 from "../../assets/about2.jpg";
+import about3 from "../../assets/about3.jpg";
 
 const Section = () => {
   return (
@@ -7,17 +10,17 @@ const Section = () => {
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <div className="max-w-lg">
-              <h2 className="text-2xl font-bold text-gray-800 sm:text-3xl">
+              <h2 className="text-2xl font-bold text-blue-shade-3 sm:text-3xl">
                 About the company
               </h2>
-              <p className="mt-4 text-gray-600 text-[18px] leading-7">
+              <p className="mt-4 text-gray-600 text-[18px] leading-7 text-justify">
                 We are a technology consulting company operating in South East
                 Asia, the Indian subcontinent, and the Middle East region. We
                 are passionate about taking on immense challenges that matter to
                 our clients and helping them in optimizing business processes,
                 reducing costs, and improving profits.
               </p>
-              <p className="mt-4 text-gray-600 text-[18px] leading-7">
+              <p className="mt-4 text-gray-600 text-[18px] leading-7 text-justify">
                 We work very closely with our clients and help them in building
                 their capabilities and leadership skills at every level and
                 every opportunity. For ongoing projects of our clients, we
@@ -28,7 +31,7 @@ const Section = () => {
             </div>
             <div className="mt-12 md:mt-0">
               <img
-                src="https://images.unsplash.com/photo-1531973576160-7125cd663d86"
+                src={about1}
                 alt=""
                 className="object-cover scale-90 md:scale-110 lg:scale-75 rounded-lg shadow-md"
               />
@@ -42,29 +45,29 @@ const Section = () => {
           <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
             <div className="md:w-5/12 lg:w-5/12 md:mr-4 mr-0">
               <img
-                src="https://tailus.io/sources/blocks/left-image/preview/images/startup.png"
+                src={about2}
                 alt=""
                 className="object-cover md:scale-125 lg:scale-100 "
                 loading="lazy"
               />
             </div>
             <div className="md:w-7/12 lg:w-6/12">
-              <h2 className="text-2xl font-bold text-gray-800 sm:text-3xl">
+              <h2 className="text-2xl font-bold text-blue-shade-3 sm:text-3xl">
                 Our Vision
               </h2>
-              <p className="mt-4 text-gray-600 text-[18px]">
+              <p className="mt-4 text-gray-600 text-[18px] text-justify">
                 We aim to go global by collaborating with organizations across
                 the geographies by helping via right technology adaption,
                 suitable approach for digital transformation and effective use
                 of latest technologies to grow faster and function more
                 effectively.
               </p>
-              <p className="mt-4 text-gray-600 text-[18px]">
+              <p className="mt-4 text-gray-600 text-[18px] text-justify">
                 Our vision is to add more names to the list of organizations who
                 can count on us for our advice/help related to organizational
                 growth and technology adaption.
               </p>
-              <p className="mt-4 text-gray-600 text-[18px]">
+              <p className="mt-4 text-gray-600 text-[18px] text-justify">
                 We aim to retain our identity of a face of cutting edge
                 technology consulting company having consultants who solve every
                 problem with their innovative and creative approach.
@@ -78,16 +81,16 @@ const Section = () => {
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-2">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <div className="max-w-lg">
-              <h2 className="text-2xl font-bold text-gray-800 sm:text-3xl">
+              <h2 className="text-2xl font-bold text-blue-shade-3 sm:text-3xl">
                 Why us?
               </h2>
-              <p className="mt-4 text-gray-600 text-[18px]">
+              <p className="mt-4 text-gray-600 text-[18px] text-justify">
                 We are a pool of 500+ consultants having expertise in Digital
                 Transformation, Mobilization, Automation, Artificial
                 Intelligence, Machine Learning, Analytics, Internet of Things
                 and Blockchain.
               </p>
-              <p className="mt-4 text-gray-600 text-[18px]">
+              <p className="mt-4 text-gray-600 text-[18px] text-justify">
                 With indepth knowledge to their profession, detailed real time
                 experience to solving problems, out consultants help in
                 translating client’s strategic direction to business process,
@@ -98,7 +101,7 @@ const Section = () => {
             </div>
             <div className="mt-12 md:mt-0">
               <img
-                src="https://images.unsplash.com/photo-1531973576160-7125cd663d86"
+                src={about3}
                 alt=""
                 className="object-cover scale-90 md:scale-110 lg:scale-75 rounded-lg shadow-md"
               />

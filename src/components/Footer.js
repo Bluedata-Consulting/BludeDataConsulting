@@ -1,194 +1,133 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faYoutube,
+  faLinkedin,
+  faInstagram,
+  faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
 const Footer = () => {
   return (
-    <section className="bg-blue-shade-5/50 relative overflow-hidden border-t border-blue-shade-1/40 py-10">
-      <div className="relative z-10 mx-auto max-w-5xl px-4">
-        <div className="-m-6 flex flex-wrap">
-          <div className="w-full p-6 md:w-1/2 lg:w-5/12">
-            <div className="flex h-full flex-col justify-between">
-              <div className="mb-4 inline-flex items-center">
-                <img src="logo35.png" alt="" />
-                <span className="text-lg font-bold text-blue-shade-2 hover:text-blue-shade-4">
-                  BDC
-                </span>
-              </div>
+    <footer>
+      <div className="bg-blue-shade-5/30 py-4 text-gray-800">
+        <div className="container px-4 mx-auto">
+          <div className="-mx-4 flex flex-wrap justify-between">
+            <div className="px-4 my-4 w-full xl:w-1/5">
+              <a href="/" className="block w-56 mb-8">
+                Logo
+              </a>
+              <p className="text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+
+            <div className="px-4 my-4 w-full sm:w-auto">
               <div>
-                <p className="mb-2  text-lg font-medium text-blue-shade-2">
-                  BLUE DATA CONSULTING
-                </p>
-                <p className="text-md text-blue-shade-1/80">
-                  &copy; Copyright 2024. All Rights Reserved by BDC.
-                </p>
+                <h2 className="inline-block text-2xl text-blue-shade-3 font-bold pb-2 mb-4 border-b-4 border-blue-shade-3">
+                  Company
+                </h2>
               </div>
-            </div>
-          </div>
-          <div className="w-full p-6 md:w-1/2 lg:w-2/12">
-            <div className="h-full">
-              <h3 className="tracking-px mb-5  text-sm font-semibold uppercase text-gray-500">
-                Company
-              </h3>
-              <ul>
-                <li className="mb-4">
-                  <Link
-                    className=" text-base font-medium text-blue-shade-2 hover:text-blue-shade-4"
-                    to="/"
-                    onClick={() => {
-                      window.scroll({
-                        top: 0,
-                        left: 0,
-                        behavior: "smooth",
-                      });
-                    }}
-                  >
-                    Home
-                  </Link>
+              <ul className="leading-8">
+                <li>
+                  <a href="/" className="hover:text-blue-400">
+                    Homepage
+                  </a>
                 </li>
-                <li className="mb-4">
-                  <Link
-                    className=" text-base font-medium text-blue-shade-2 hover:text-blue-shade-4"
-                    to="/about"
-                    onClick={() => {
-                      window.scroll({
-                        top: 0,
-                        left: 0,
-                        behavior: "smooth",
-                      });
-                    }}
-                  >
+                <li>
+                  <a href="/about" className="hover:text-blue-400">
                     About
-                  </Link>
+                  </a>
                 </li>
-                <li className="mb-4">
-                  <Link
-                    className=" text-base font-medium text-blue-shade-2 hover:text-blue-shade-4"
-                    to="/team"
-                    onClick={() => {
-                      window.scroll({
-                        top: 0,
-                        left: 0,
-                        behavior: "smooth",
-                      });
-                    }}
-                  >
+                <li>
+                  <a href="/contact" className="hover:text-blue-400">
+                    Contact Us
+                  </a>
+                </li>
+                <li>
+                  <a href="/team" className="hover:text-blue-400">
                     Team
-                  </Link>
-                </li>
-                <li className="mb-4">
-                  <Link
-                    className=" text-base font-medium text-blue-shade-2 hover:text-blue-shade-4"
-                    to="/contact"
-                    onClick={() => {
-                      window.scroll({
-                        top: 0,
-                        left: 0,
-                        behavior: "smooth",
-                      });
-                    }}
-                  >
-                    Contact
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="w-full p-6 md:w-1/2 lg:w-4/12">
-            <div className="h-full">
-              <h3 className="tracking-px mb-5  text-sm font-semibold uppercase text-gray-500">
-                Expertise
-              </h3>
-              <ul>
-                <li className="mb-4">
-                  <Link
-                    className=" text-base font-medium text-blue-shade-2 hover:text-blue-shade-4"
-                    to="/ai"
-                    onClick={() => {
-                      window.scroll({
-                        top: 0,
-                        left: 0,
-                        behavior: "smooth",
-                      });
-                    }}
-                  >
-                    Technology Consulting
-                  </Link>
+            <div className="px-4 my-4 w-full sm:w-auto">
+              <div>
+                <h2 className="inline-block text-2xl text-blue-shade-3 font-bold pb-2 mb-4 border-b-4 border-blue-shade-3">
+                  Blog
+                </h2>
+              </div>
+              <ul className="leading-8">
+                <li>
+                  <a href="/" className="hover:text-blue-400">
+                    Getting Started With HTML and CSS
+                  </a>
                 </li>
-                <li className="mb-4">
-                  <Link
-                    className=" text-base font-medium text-blue-shade-2 hover:text-blue-shade-4"
-                    to="/blockchain"
-                    onClick={() => {
-                      window.scroll({
-                        top: 0,
-                        left: 0,
-                        behavior: "smooth",
-                      });
-                    }}
-                  >
-                    Analytics & AI Solution
-                  </Link>
+                <li>
+                  <a href="/" className="hover:text-blue-400">
+                    What Is Flex And When to Use It?
+                  </a>
                 </li>
-                <li className="mb-4">
-                  <Link
-                    className=" text-base font-medium text-blue-shade-2 hover:text-blue-shade-4"
-                    to="/cloud"
-                    onClick={() => {
-                      window.scroll({
-                        top: 0,
-                        left: 0,
-                        behavior: "smooth",
-                      });
-                    }}
-                  >
-                    Scaling Teams
-                  </Link>
+                <li>
+                  <a href="/" className="hover:text-blue-400">
+                    How TailwindCSS Can Help Your Productivity?
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="hover:text-blue-400">
+                    5 Tips to Make Responsive Website
+                  </a>
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="w-full p-6 md:w-1/2 lg:w-1/12">
-            <div className="h-full">
-              <h3 className="tracking-px mb-5 text-sm font-semibold uppercase text-gray-500">
-                Industries
-              </h3>
-              <ul>
-                <li className="mb-4">
-                  <Link
-                    className=" text-base font-medium text-blue-shade-2 hover:text-blue-shade-4"
-                    to="/telecom"
-                    onClick={() => {
-                      window.scroll({
-                        top: 0,
-                        left: 0,
-                        behavior: "smooth",
-                      });
-                    }}
-                  >
-                    Telecom
-                  </Link>
-                </li>
-                <li className="mb-4">
-                  <Link
-                    className=" text-base font-medium text-blue-shade-2 hover:text-blue-shade-4"
-                    to="/manufacturing "
-                    onClick={() => {
-                      window.scroll({
-                        top: 0,
-                        left: 0,
-                        behavior: "smooth",
-                      });
-                    }}
-                  >
-                    Manufacturing
-                  </Link>
-                </li>
-              </ul>
+            <div className="px-4 my-4 w-full sm:w-auto">
+              <div>
+                <h2 className="inline-block text-2xl text-blue-shade-3 font-bold pb-2 mb-4 border-b-4 border-blue-shade-3">
+                  Connect With Us
+                </h2>
+              </div>
+              <div className="flex gap-x-1">
+                <a
+                  href="https://www.youtube.com/@bluedatac"
+                  className="inline-flex items-center justify-center h-10 w-10 border border-blue-shade-1 text-blue-shade-1 rounded-full mr-1 hover:text-blue-shade-3 hover:border-blue-shade-3"
+                >
+                  <FontAwesomeIcon icon={faYoutube} />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/bluedatac/"
+                  className="inline-flex items-center justify-center h-10 w-10 border border-blue-shade-1 text-blue-shade-1 rounded-full mr-1 hover:text-blue-shade-3 hover:border-blue-shade-3"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+                <a
+                  href="https://www.instagram.com/bluedatac/"
+                  className="inline-flex items-center justify-center h-10 w-10 border border-blue-shade-1 text-blue-shade-1 rounded-full mr-1 hover:text-blue-shade-3 hover:border-blue-shade-3"
+                >
+                  <FontAwesomeIcon icon={faInstagram} />
+                </a>
+                <a
+                  href="https://www.facebook.com/bluedatac"
+                  className="inline-flex items-center justify-center h-10 w-10 border border-blue-shade-1 text-blue-shade-1 rounded-full mr-1 hover:text-blue-shade-3 hover:border-blue-shade-3"
+                >
+                  <FontAwesomeIcon icon={faFacebook} />
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+      <div className="bg-blue-shade-2 py-2 text-gray-100">
+        <div className="container mx-auto px-4">
+          <div className="-mx-4 flex flex-wrap justify-center">
+            <div className="px-4 w-full text-center sm:w-auto sm:text-left">
+              Copyright © 2024 Blue Data Consulting. All Rights Reserved.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 };
 

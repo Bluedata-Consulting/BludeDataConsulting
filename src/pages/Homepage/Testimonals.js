@@ -5,6 +5,7 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 
+
 const testimonialsData = [
   {
     name: "Airtel, India",
@@ -54,55 +55,57 @@ const Testimonials = () => {
   const currentTestimonial = testimonialsData[activeIndex];
 
   return (
-    <div className="container mt-10 mx-auto px-8 md:px-8">
-      <section className="mb-12 text-center">
-        <h2 className="mb-10 text-3xl font-bold text-blue-shade-3">
+    <div className="bg-gray-100/70 pb-8 pt-16 mb-12">
+      <div className="container mx-auto px-8 md:px-8 ">
+        <section className="mb-12 text-center">
+          <h2 className="mb-10 text-3xl font-bold text-blue-shade-3">
             What Our Clients Have to Say
-        </h2>
+          </h2>
 
-        <div className="flex items-center justify-center">
-          <div className="max-w-lg">
-            <div className="mb-6">
-              <img
-                className="mx-auto mb-6 rounded-full border border-black shadow-lg w-24"
-                src={currentTestimonial.image}
-                alt="avatar"
-              />
-              <h5 className="mb-2 text-2xl font-bold text-blue-shade-3">
-                {currentTestimonial.name}
-              </h5>
-              <p className="mb-4 font-medium text-xl text-blue-shade-1">
-                {currentTestimonial.role}
-              </p>
-              <p className="mb-6 text-blue-shade-1/80 text-lg">
-                {currentTestimonial.content}
-              </p>
+          <div className="flex items-center justify-center">
+            <div className="max-w-lg">
+              <div className="mb-6">
+                <img
+                  className="mx-auto mb-6 rounded-full border border-black shadow-lg w-24"
+                  src={currentTestimonial.image}
+                  alt="avatar"
+                />
+                <h5 className="mb-2 text-2xl font-bold text-blue-shade-3">
+                  {currentTestimonial.name}
+                </h5>
+                <p className="mb-4 font-medium text-xl text-blue-shade-1">
+                  {currentTestimonial.role}
+                </p>
+                <p className="mb-6 text-blue-shade-1/80 text-lg">
+                  {currentTestimonial.content}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Previous and Next Buttons */}
-        <div className="flex justify-between">
-          {/* Previous Button with Icon */}
-          <div
-            className="cursor-pointer text-lg text-blue-shade-1 mr-4"
-            type="button"
-            onClick={handlePrev}
-          >
-            <FontAwesomeIcon icon={faChevronLeft} className="mr-2" />
-            Previous
+          {/* Previous and Next Buttons */}
+          <div className="flex justify-between">
+            {/* Previous Button with Icon */}
+            <div
+              className="cursor-pointer text-lg text-blue-shade-1 mr-4"
+              type="button"
+              onClick={handlePrev}
+            >
+              <FontAwesomeIcon icon={faChevronLeft} className="mr-2" />
+              Previous
+            </div>
+            {/* Next Button with Icon */}
+            <div
+              className="cursor-pointer text-lg text-blue-shade-1  ml-4"
+              type="button"
+              onClick={handleNext}
+            >
+              Next
+              <FontAwesomeIcon icon={faChevronRight} className="ml-2" />
+            </div>
           </div>
-          {/* Next Button with Icon */}
-          <div
-            className="cursor-pointer text-lg text-blue-shade-1  ml-4"
-            type="button"
-            onClick={handleNext}
-          >
-            Next
-            <FontAwesomeIcon icon={faChevronRight} className="ml-2" />
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   );
 };

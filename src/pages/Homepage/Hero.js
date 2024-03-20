@@ -1,29 +1,51 @@
 import React from "react";
-import Image from "../../assets/homepageBg.jpg";
+import image from "../../assets/bg.jpg";
 
 const Hero = () => {
-  const backgroundImageStyle = {
-    backgroundImage: `url(${Image})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  };
-
   return (
-    <div
-      className="py-64 relative bg-cover bg-clip-border backdrop-blur-sm bg-center"
-      style={backgroundImageStyle}
+    <section
+      className="bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${image})` }}
     >
-      <div className="absolute inset-0 bg-slate-800 opacity-60"></div>
-      <div className="container mx-auto px-4 md:px-8 text-center relative z-10">
-        <h1 className="text-gray-100 font-bold text-4xl lg:text-[55px] leading-tight mb-6">
-          Blue Data Consulting
-        </h1>
-        <p className="text-gray-100 text-lg md:text-2xl mb-12">
-          Efficient, Accurate, and Automated Systems for Amplified Business
-          Intelligence.
-        </p>
+      <div className="relative">
+        <div className="absolute inset-0 bg-gradient-to-r from-white to-transparent"></div>
+
+        <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+          <div className="max-w-xl">
+            <div className="mb-8">
+              <h1 className="text-3xl font-extrabold sm:text-5xl">
+                Let us find your
+                <strong className="block font-extrabold text-blue-shade-3">
+                  {" "}
+                  Forever Home.{" "}
+                </strong>
+              </h1>
+
+              <p className="mt-4 max-w-lg sm:text-xl/relaxed">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Nesciunt illo tenetur fuga ducimus numquam ea!
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="/"
+                className="px-8 py-3 text-sm font-medium text-white bg-blue-shade-3 hover:bg-blue-shade-2"
+              >
+                Get Started
+              </a>
+
+              <a
+                href="/"
+                className="px-8 py-3 text-sm font-medium text-blue-shade-3 hover:text-blue-shade-2"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

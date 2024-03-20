@@ -18,18 +18,18 @@ const Intro = () => {
               Hi, we are a consulting company, we thank you for your time to
               read about us.
             </p>
-            <p className="mt-4 text-lg text-gray-700 lg:text-[18px]">
+            <p className="mt-4 text-lg text-gray-700 lg:text-[18px] text-justify">
               We work with companies and partners like you to help you
               accelerate your company and ongoing projects by using disruptive
               technologies.
             </p>
-            <p className="mt-4 text-lg text-gray-700 lg:text-[18px]">
+            <p className="mt-4 text-lg text-gray-700 lg:text-[18px] text-justify">
               Are you planning to start your journey with technologies such as
               Artificial Intelligence, Machine Learning, Data Science, IoT, RPA
               and facing challenge of right approach, tools, team and process
               selection?
             </p>
-            <p className="mt-4 text-lg text-gray-700 lg:text-[18px]">
+            <p className="mt-4 text-lg text-gray-700 lg:text-[18px] text-justify">
               No worries! We have created a group of like-minded people to help
               you grow your business with their expertise in these disruptive
               technologies. Everything is about you and what you want to do, We

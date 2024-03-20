@@ -2,13 +2,15 @@ import React from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import Form from "./Form";
+import FormSection from "./FormSection";
 
 const Contact = () => {
   return (
     <div>
       <Navbar />
+
       {/*Hero Section */}
-      <div className="flex flex-col space-y-4 pb-10 pt-12 mb-8 md:pt-48">
+      <div className="flex flex-col space-y-4 pb-10 pt-36 mb-8 md:pt-48">
         <p className="text-center text-3xl font-bold text-blue-shade-2 md:text-[48px] md:leading-10">
           Love to hear from you
         </p>
@@ -17,8 +19,10 @@ const Contact = () => {
         </p>
       </div>
 
+      <FormSection />
+
       {/* Map Section */}
-      <section className="bg-white">
+      {/* <section className="bg-white">
         <div className="container px-6 py-12 mx-auto">
           <div>
             <h1 className="mt-2 text-2xl font-bold text-blue-shade-2  md:text-3xl ">
@@ -134,10 +138,10 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Form Section */}
-      <Form />
+      {/* <Form /> */}
       <Footer />
     </div>
   );

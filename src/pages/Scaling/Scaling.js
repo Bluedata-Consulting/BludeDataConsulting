@@ -1,6 +1,9 @@
 import React from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
+import scale1 from "../../assets/scale1.jpg";
+import scale2 from "../../assets/scale2.jpg";
+import scale3 from "../../assets/scale3.jpg";
 
 const Scaling = () => {
   return (
@@ -40,7 +43,7 @@ const Scaling = () => {
             </div>
             <div className="mt-12 md:mt-0">
               <img
-                src="https://www.bluedataconsulting.in/wp-content/uploads/2021/11/corporate_training_Blue_data_consulting-project_based_training-768x432.jpg"
+                src={scale1}
                 alt=""
                 className="object-cover scale-90 rounded-md shadow-md"
               />
@@ -114,9 +117,9 @@ const Scaling = () => {
             </div>
             <div className="mt-12 md:mt-0 flex justify-center">
               <img
-                src="https://www.bluedataconsulting.in/wp-content/uploads/2021/10/analytics-2697949_1920-1-370x285-1.jpg"
+                src={scale2}
                 alt=""
-                className="object-cover scale-110  rounded-lg shadow-md"
+                className="object-cover scale-90  rounded-lg shadow-md"
               />
             </div>
           </div>
@@ -128,9 +131,9 @@ const Scaling = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <div className="mr-0 lg:mr-16 md:mt-0">
               <img
-                src="https://www.bluedataconsulting.in/wp-content/uploads/2021/11/corporate_training_Blue_data_consulting_malaysia.jpg"
+                src={scale3}
                 alt=""
-                className="object-cover scale-90 rounded-lg shadow-md"
+                className="object-cover rounded-lg shadow-md"
               />
             </div>
             <div className="max-w-2xl">
