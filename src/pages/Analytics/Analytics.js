@@ -21,6 +21,13 @@ const Analytics = () => {
           <div className="flex flex-wrap justify-center">
             <Link
               to="/contact"
+              onClick={() => {
+                window.scroll({
+                  top: 0,
+                  left: 0,
+                  behavior: "smooth",
+                });
+              }}
               className="px-4 py-2 m-2 bg-blue-shade-3 hover:bg-blue-shade-2 text-[16px] font-semibold rounded-lg text-white"
             >
               Get started

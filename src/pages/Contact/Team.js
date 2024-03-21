@@ -14,6 +14,8 @@ import krishna from "../../assets/krishna.png";
 import snehal from "../../assets/snehal.png";
 import arihant from "../../assets/arihant.png";
 import feny from "../../assets/feny.png";
+import madhav from "../../assets/madhav.png";
+import sageer from "../../assets/sageer.png";
 
 const Team = () => {
   const teamMembers = [
@@ -40,7 +42,7 @@ const Team = () => {
     {
       name: "Sageer Mohammad",
       role: "Operations & Delivery Manager",
-      image: "",
+      image: sageer,
     },
     {
       name: "Hetvi Dalvi",
@@ -56,6 +58,11 @@ const Team = () => {
       name: "Deep Pipaliya",
       role: "Associate Graphic Designer",
       image: deep,
+    },
+    {
+      name: "Madhav Jariwala",
+      role: "PowerApps Developer",
+      image: madhav,
     },
     {
       name: "Krishna Sharma",
@@ -91,11 +98,6 @@ const Team = () => {
       name: "Arihant Jain",
       role: "Full Stack Developer",
       image: arihant,
-    },
-    {
-      name: "Madhav Jariwala",
-      role: "PowerApps Developer",
-      image: "",
     },
     {
       name: "Feny Ganeshwala",

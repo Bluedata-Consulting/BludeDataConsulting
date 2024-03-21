@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const services = [
@@ -6,19 +7,19 @@ const Services = () => {
       title: "Technology Consulting",
       description:
         "We help organizations to accelerate ongoing projects and plan their upcoming projects from AI, data, automation and IoT domain. we get involved in mentoring, monitoring and architecting technology projects.",
-      link: "",
+      link: "/techconsulting",
     },
     {
       title: "Analytics & AI Solution",
       description:
         "We at Blue Data Consulting help organizations by building AI, Data engines, integrating silos with in the organizations, analyzing their business processes & developing productive solutions.",
-      link: "",
+      link: "/analytics",
     },
     {
       title: "Scaling Teams",
       description:
         "We help organizations to scale up their existing teams by providing required coaching and training on the relevant tools, technology, approach and project development methodology.  ",
-      link: "",
+      link: "/scaling",
     },
   ];
 
@@ -83,13 +84,19 @@ const Services = () => {
                 {service.description}
               </p>
             </div>
-            <a
-              href={service.link}
-              aria-label=""
+            <Link
+              to={service.link}
+              onClick={() => {
+                window.scroll({
+                  top: 0,
+                  left: 0,
+                  behavior: "smooth",
+                });
+              }}
               className="inline-flex items-center font-semibold transition-colors duration-200 text-blue-shade-3 hover:text-blue-shade-2"
             >
               Learn more
-            </a>
+            </Link>
           </div>
         ))}
       </div>

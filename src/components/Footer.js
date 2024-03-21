@@ -40,24 +40,64 @@ const Footer = () => {
               </div>
               <ul className="leading-8">
                 <li>
-                  <a href="/" className="hover:text-blue-400">
+                  <Link
+                    to="/"
+                    className="hover:text-blue-400"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                  >
                     Homepage
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/about" className="hover:text-blue-400">
+                  <Link
+                    to="/about"
+                    className="hover:text-blue-400"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                  >
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/contact" className="hover:text-blue-400">
+                  <Link
+                    to="/contact"
+                    className="hover:text-blue-400"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                  >
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/team" className="hover:text-blue-400">
+                  <Link
+                    to="/team"
+                    className="hover:text-blue-400"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                  >
                     Team
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -69,20 +109,50 @@ const Footer = () => {
               </div>
               <ul className="leading-8">
                 <li>
-                  <a href="/article1" className="hover:text-blue-400">
+                  <Link
+                    to="/article1"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                    className="hover:text-blue-400"
+                  >
                     Transforming Manufacturing Through Advance Analytics
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/article2" className="hover:text-blue-400">
+                  <Link
+                    to="/article2"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                    className="hover:text-blue-400"
+                  >
                     A New Era of AI: Meet ChatGPT, the OpenAI-Trained Language
                     Model
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/article3" className="hover:text-blue-400">
+                  <Link
+                    to="/article3"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                    className="hover:text-blue-400"
+                  >
                     Transform Your Customer Experience with AI & Data
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -93,30 +163,34 @@ const Footer = () => {
                 </h2>
               </div>
               <div className="flex gap-x-1">
-                <a
-                  href="https://www.youtube.com/@bluedatac"
+                <Link
+                  to="https://www.youtube.com/@bluedatac"
+                  target="_blank"
                   className="inline-flex items-center justify-center h-10 w-10 border border-blue-shade-1 text-blue-shade-1 rounded-full mr-1 hover:text-blue-shade-3 hover:border-blue-shade-3"
                 >
                   <FontAwesomeIcon icon={faYoutube} />
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/bluedatac/"
+                </Link>
+                <Link
+                  to="https://www.linkedin.com/company/bluedatac/"
+                  target="_blank"
                   className="inline-flex items-center justify-center h-10 w-10 border border-blue-shade-1 text-blue-shade-1 rounded-full mr-1 hover:text-blue-shade-3 hover:border-blue-shade-3"
                 >
                   <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-                <a
-                  href="https://www.instagram.com/bluedatac/"
+                </Link>
+                <Link
+                  to="https://www.instagram.com/bluedatac/"
+                  target="_blank"
                   className="inline-flex items-center justify-center h-10 w-10 border border-blue-shade-1 text-blue-shade-1 rounded-full mr-1 hover:text-blue-shade-3 hover:border-blue-shade-3"
                 >
                   <FontAwesomeIcon icon={faInstagram} />
-                </a>
-                <a
-                  href="https://www.facebook.com/bluedatac"
+                </Link>
+                <Link
+                  to="https://www.facebook.com/bluedatac"
+                  target="_blank"
                   className="inline-flex items-center justify-center h-10 w-10 border border-blue-shade-1 text-blue-shade-1 rounded-full mr-1 hover:text-blue-shade-3 hover:border-blue-shade-3"
                 >
                   <FontAwesomeIcon icon={faFacebook} />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

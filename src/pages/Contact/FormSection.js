@@ -177,13 +177,6 @@ const FormSection = () => {
                 className="mx-2 transition-colors duration-300 transform hover:text-blue-400"
                 to="https://www.facebook.com/bluedatac"
                 target="_blank"
-                onClick={() => {
-                  window.scroll({
-                    top: 0,
-                    left: 0,
-                    behavior: "smooth",
-                  });
-                }}
               >
                 <FontAwesomeIcon
                   icon={faFacebookF}
@@ -195,13 +188,6 @@ const FormSection = () => {
                 className="mx-2 transition-colors duration-300 transform hover:text-red-500/90"
                 to="https://www.youtube.com/@bluedatac"
                 target="_blank"
-                onClick={() => {
-                  window.scroll({
-                    top: 0,
-                    left: 0,
-                    behavior: "smooth",
-                  });
-                }}
               >
                 <FontAwesomeIcon
                   icon={faYoutube}
@@ -213,13 +199,6 @@ const FormSection = () => {
                 className="mx-2 transition-colors duration-300 transform hover:text-pink-500"
                 to="https://www.instagram.com/bluedatac/"
                 target="_blank"
-                onClick={() => {
-                  window.scroll({
-                    top: 0,
-                    left: 0,
-                    behavior: "smooth",
-                  });
-                }}
               >
                 <FontAwesomeIcon
                   icon={faInstagram}
@@ -231,13 +210,6 @@ const FormSection = () => {
                 className="mx-2 transition-colors duration-300 transform hover:text-blue-300"
                 to="https://www.linkedin.com/company/bluedatac/"
                 target="_blank"
-                onClick={() => {
-                  window.scroll({
-                    top: 0,
-                    left: 0,
-                    behavior: "smooth",
-                  });
-                }}
               >
                 <FontAwesomeIcon
                   icon={faLinkedin}

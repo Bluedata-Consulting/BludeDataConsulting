@@ -58,6 +58,13 @@ const BlogPost = () => {
                 </div>
                 <Link
                   to={article.link}
+                  onClick={() => {
+                    window.scroll({
+                      top: 0,
+                      left: 0,
+                      behavior: "smooth",
+                    });
+                  }}
                   className="text-blue-shade-3 font-bold text-lg mb-2 hover:text-blue-shade-2 inline-block"
                 >
                   {article.title}

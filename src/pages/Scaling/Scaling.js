@@ -6,7 +6,6 @@ import scale1 from "../../assets/scale1.jpg";
 import scale2 from "../../assets/scale2.jpg";
 import scale3 from "../../assets/scale3.jpg";
 import scale4 from "../../assets/scale4.jpg";
-import image from "../../assets/bg.jpg";
 
 const Scaling = () => {
   return (
@@ -28,6 +27,13 @@ const Scaling = () => {
           <div className="flex flex-wrap justify-center">
             <Link
               to="/contact"
+              onClick={() => {
+                window.scroll({
+                  top: 0,
+                  left: 0,
+                  behavior: "smooth",
+                });
+              }}
               className="px-4 py-2 m-2 bg-blue-shade-3 hover:bg-blue-shade-2 text-[16px] font-semibold rounded-lg text-white"
             >
               Get started
