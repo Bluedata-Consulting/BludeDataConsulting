@@ -11,7 +11,7 @@ const BlogPost = () => {
       title: "Transforming Manufacturing Through Advance Analytics",
       date: "March, 2023",
       image: home1,
-      link: "",
+      link: "/article1",
     },
     {
       heading: "ARTIFICIAL INTELLIGENCE & ML",
@@ -19,14 +19,14 @@ const BlogPost = () => {
         "A New Era of Artificial Intelligence: Meet ChatGPT, the OpenAI-Trained Language Model ",
       date: "October, 2023",
       image: home2,
-      link: "",
+      link: "/article2",
     },
     {
       heading: "ML, BUSINESS",
       title: "Transform Your Customer Experience with AI & Data",
       date: "October, 2023",
       image: home3,
-      link: "",
+      link: "/article3",
     },
   ];
   return (
@@ -51,11 +51,7 @@ const BlogPost = () => {
               key={key}
               className="border border-blue-shade-2/50 bg-white rounded-lg overflow-hidden"
             >
-              <img
-                src={article.image}
-                alt=""
-                className="w-full mb-3"
-              />
+              <img src={article.image} alt="" className="w-full mb-3" />
               <div className="p-4 pt-2">
                 <div className="text-sm text-gray-700 flex items-center mb-2">
                   {article.heading}

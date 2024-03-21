@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "../../src/assets/logo40.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -85,8 +86,8 @@ const Header = () => {
   const insightDropdownContainerRef = useRef();
   return (
     <div className="relative top-0 z-50">
-      <header className="absolute w-full bg-blue-shade-2/85 px-4 py-2">
-        <div className="mx-auto flex max-w-7xl items-center justify-between py-2">
+      <header className="absolute w-full bg-blue-shade-5 pl-4 pr-24">
+        <div className="mx-auto flex max-w-7xl items-center justify-between">
           {/* Logo and brand name */}
           <Link
             to="/"
@@ -99,10 +100,10 @@ const Header = () => {
               });
             }}
           >
-            <span>
-              <img src="logo35.png" alt="" className="" />
+            <span className="scale-100">
+              <img src={logo} alt="" className="scale-50" />
             </span>
-            <span className="font-bold text-white hover:text-blue-shade-5">
+            <span className="font-bold text-blue-shade-2 hover:text-blue-shade-3">
               BLUE DATA CONSULTING
             </span>
           </Link>
@@ -112,7 +113,7 @@ const Header = () => {
               <li>
                 <Link
                   to="/"
-                  className="text-md font-semibold text-md text-white hover:text-blue-shade-5"
+                  className="text-md font-semibold text-md text-blue-shade-2 hover:text-blue-shade-3"
                   onClick={() => {
                     window.scroll({
                       top: 0,
@@ -136,7 +137,7 @@ const Header = () => {
                 ref={expertiseDropdownContainerRef}
                 className="relative"
               >
-                <div className="text-md cursor-pointer font-semibold text-md text-white hover:text-blue-shade-5 flex items-center">
+                <div className="text-md cursor-pointer font-semibold text-md text-blue-shade-2 hover:text-blue-shade-3 flex items-center">
                   Services
                   {isExpertiseOpen ? (
                     <ChevronUp className="ml-2" />
@@ -145,10 +146,10 @@ const Header = () => {
                   )}
                 </div>
                 {isExpertiseOpen && (
-                  <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-blue-shade-2">
+                  <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-blue-shade-5">
                     <Link
                       to="/techconsulting"
-                      className="block px-4 py-2 font-semibold text-md text-white hover:text-blue-shade-5"
+                      className="block px-4 py-2 font-semibold text-md text-blue-shade-2 hover:text-blue-shade-3"
                       onClick={() => {
                         window.scroll({
                           top: 0,
@@ -165,7 +166,7 @@ const Header = () => {
                     </Link>
                     <Link
                       to="/analytics"
-                      className="block px-4 py-2 font-semibold text-md text-white hover:text-blue-shade-5"
+                      className="block px-4 py-2 font-semibold text-md text-blue-shade-2 hover:text-blue-shade-3"
                       onClick={() => {
                         window.scroll({
                           top: 0,
@@ -182,7 +183,7 @@ const Header = () => {
                     </Link>
                     <Link
                       to="/scaling"
-                      className="block px-4 py-2 font-semibold text-md text-white hover:text-blue-shade-5"
+                      className="block px-4 py-2 font-semibold text-md text-blue-shade-2 hover:text-blue-shade-3"
                       onClick={() => {
                         window.scroll({
                           top: 0,
@@ -212,7 +213,7 @@ const Header = () => {
                 ref={insightDropdownContainerRef}
                 className="relative"
               >
-                <div className="text-md cursor-pointer font-semibold text-md text-white hover:text-blue-shade-5 flex items-center">
+                <div className="text-md cursor-pointer font-semibold text-md text-blue-shade-2 hover:text-blue-shade-3 flex items-center">
                   Insights
                   {isInsightOpen ? (
                     <ChevronUp className="ml-2" />
@@ -221,10 +222,10 @@ const Header = () => {
                   )}
                 </div>
                 {isInsightOpen && (
-                  <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-blue-shade-2">
+                  <div className="absolute z-10 mt-2 w-40 rounded-md shadow-lg bg-blue-shade-5">
                     <Link
                       to="/about"
-                      className="block px-4 py-2 font-semibold text-md text-white hover:text-blue-shade-5 "
+                      className="block px-4 py-2 font-semibold text-md text-blue-shade-2 hover:text-blue-shade-3"
                       onClick={() => {
                         window.scroll({
                           top: 0,
@@ -242,7 +243,7 @@ const Header = () => {
 
                     <Link
                       to="/team"
-                      className="block px-4 py-2 font-semibold text-md text-white hover:text-blue-shade-5"
+                      className="block px-4 py-2 font-semibold text-md text-blue-shade-2 hover:text-blue-shade-3"
                       onClick={() => {
                         window.scroll({
                           top: 0,
@@ -259,7 +260,7 @@ const Header = () => {
                     </Link>
                     <Link
                       to="/contact"
-                      className="block px-4 py-2 font-semibold text-md text-white hover:text-blue-shade-5"
+                      className="block px-4 py-2 font-semibold text-md text-blue-shade-2 hover:text-blue-shade-3"
                       onClick={() => {
                         window.scroll({
                           top: 0,
@@ -284,13 +285,13 @@ const Header = () => {
           <div className="lg:hidden">
             <Menu
               onClick={toggleMenu}
-              className="h-6 w-6 cursor-pointer text-white"
+              className="h-6 w-6 cursor-pointer text-blue-shade-2 hover:text-blue-shade-3"
             />
           </div>
 
           {/* Mobile Menu */}
           {isMenuOpen && (
-            <div className="absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 transition lg:hidden bg-blue-shade-2/95 shadow-lg ring-1 ring-blue-shade-3 ring-opacity-5">
+            <div className="absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 transition lg:hidden bg-blue-shade-2 shadow-lg ring-1 ring-blue-shade-3 ring-opacity-5">
               <div className="px-5 pb-6 pt-5">
                 <div className="flex items-center justify-between pb-2">
                   <span className="font-bold text-xl text-white hover:text-blue-shade-5">

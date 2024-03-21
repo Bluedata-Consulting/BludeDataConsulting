@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import logo from "../assets/logo40.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faYoutube,
@@ -9,19 +11,25 @@ import {
 const Footer = () => {
   return (
     <footer>
-      <div className="bg-blue-shade-5/30 py-4 text-gray-800">
+      <div className="bg-blue-shade-5/30 py-4 text-gray-800 px-8">
         <div className="container px-4 mx-auto">
           <div className="-mx-4 flex flex-wrap justify-between">
             <div className="px-4 my-4 w-full xl:w-1/5">
-              <a href="/" className="block w-56 mb-8">
-                Logo
-              </a>
-              <p className="text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
+              <Link
+                to="/"
+                className="inline-flex items-center space-x-2"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                <span className="scale-110">
+                  <img src={logo} alt="" className="scale-75" />
+                </span>
+              </Link>
             </div>
 
             <div className="px-4 my-4 w-full sm:w-auto">
@@ -61,23 +69,19 @@ const Footer = () => {
               </div>
               <ul className="leading-8">
                 <li>
-                  <a href="/" className="hover:text-blue-400">
-                    Getting Started With HTML and CSS
+                  <a href="/article1" className="hover:text-blue-400">
+                    Transforming Manufacturing Through Advance Analytics
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="hover:text-blue-400">
-                    What Is Flex And When to Use It?
+                  <a href="/article2" className="hover:text-blue-400">
+                    A New Era of AI: Meet ChatGPT, the OpenAI-Trained Language
+                    Model
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="hover:text-blue-400">
-                    How TailwindCSS Can Help Your Productivity?
-                  </a>
-                </li>
-                <li>
-                  <a href="/" className="hover:text-blue-400">
-                    5 Tips to Make Responsive Website
+                  <a href="/article3" className="hover:text-blue-400">
+                    Transform Your Customer Experience with AI & Data
                   </a>
                 </li>
               </ul>

@@ -55,7 +55,7 @@ const Testimonials = () => {
   const currentTestimonial = testimonialsData[activeIndex];
 
   return (
-    <div className="bg-gray-100/70 pb-8 pt-16 mb-12">
+    <div className="bg-gray-100/70 pb-8 pt-16 mb-12 px-4">
       <div className="container mx-auto px-8 md:px-8 ">
         <section className="mb-12 text-center">
           <h2 className="mb-10 text-3xl font-bold text-blue-shade-3">

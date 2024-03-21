@@ -7,7 +7,7 @@ const Section = () => {
   return (
     <>
       <section>
-        <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <div className="max-w-lg">
               <h2 className="text-2xl font-bold text-blue-shade-3 sm:text-3xl">
@@ -40,14 +40,14 @@ const Section = () => {
         </div>
       </section>
 
-      <div className="py-16 bg-white">
-        <div className="container mx-auto px-6 text-gray-600 md:px-12 xl:px-6">
+      <div className="bg-white">
+        <div className="container mx-auto px-6 text-gray-600 md:px-12 xl:px-8">
           <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
             <div className="md:w-5/12 lg:w-5/12 md:mr-4 mr-0">
               <img
                 src={about2}
                 alt=""
-                className="object-cover md:scale-125 lg:scale-100 "
+                className="object-cover scale-75"
                 loading="lazy"
               />
             </div>
@@ -78,7 +78,7 @@ const Section = () => {
       </div>
 
       <section>
-        <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-2">
+        <div className="container mx-auto py-16 px-8 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <div className="max-w-lg">
               <h2 className="text-2xl font-bold text-blue-shade-3 sm:text-3xl">
