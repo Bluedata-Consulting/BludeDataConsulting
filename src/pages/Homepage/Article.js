@@ -49,7 +49,7 @@ const BlogPost = () => {
           {articles.map((article, key) => (
             <div
               key={key}
-              className="border border-blue-shade-2/50 bg-white rounded-lg overflow-hidden"
+              className="border border-blue-shade-2/50 bg-white rounded-lg overflow-hidden shadow shadow-blue-shade-4/50"
             >
               <img src={article.image} alt="" className="w-full mb-3" />
               <div className="p-4 pt-2">

@@ -8,6 +8,8 @@ import Tech from "./pages/Tech/Tech";
 import Scaling from "./pages/Scaling/Scaling";
 import Analytics from "./pages/Analytics/Analytics";
 import Article1 from "./pages/Article/Article1";
+import Article2 from "./pages/Article/Article2";
+import Article3 from "./pages/Article/Article3";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/scaling" element={<Scaling />} />
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/article1" element={<Article1 />} />
+          <Route path="/article2" element={<Article2 />} />
+          <Route path="/article3" element={<Article3 />} />
         </Routes>
       </Router>
     </>
