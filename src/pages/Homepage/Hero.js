@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../assets/bg.jpeg";
+import image from "../../assets/bg.jpg";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
@@ -9,7 +9,7 @@ const Hero = () => {
       style={{ backgroundImage: `url(${image})` }}
     >
       <div className="relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-white/80 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-white to-transparent"></div>
 
         <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
           <div className="max-w-xl">

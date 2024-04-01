@@ -87,7 +87,7 @@ const Header = () => {
   return (
     <div className="relative top-0 z-50">
       <header className="absolute w-full bg-blue-shade-5 pl-4 pr-24">
-        <div className="mx-auto flex max-w-7xl items-center justify-between">
+        <div className="mx-auto flex max-w-7xl items-center lg:justify-between">
           {/* Logo and brand name */}
           <Link
             to="/"
@@ -295,7 +295,7 @@ const Header = () => {
               <div className="px-5 pb-6 pt-5">
                 <div className="flex items-center justify-between pb-2">
                   <span className="font-bold text-xl text-white hover:text-blue-shade-5">
-                    Blue Data Consulting
+                    BDC
                   </span>
                   <div className="-mr-2">
                     <button

@@ -7,6 +7,7 @@ import Team from "./pages/Contact/Team";
 import Tech from "./pages/Tech/Tech";
 import Scaling from "./pages/Scaling/Scaling";
 import Analytics from "./pages/Analytics/Analytics";
+import Article1 from "./pages/Article/Article1";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/techconsulting" element={<Tech />} />
           <Route path="/scaling" element={<Scaling />} />
           <Route path="/analytics" element={<Analytics />} />
+          <Route path="/article1" element={<Article1 />} />
         </Routes>
       </Router>
     </>
