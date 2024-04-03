@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import home1 from "../../assets/home1.jpg";
 import home2 from "../../assets/home2.jpg";
 import home3 from "../../assets/home3.jpg";
@@ -29,6 +30,7 @@ const BlogPost = () => {
       link: "/article3",
     },
   ];
+
   return (
     <div className="">
       <div className="max-w-screen-2xl mx-auto p-5 sm:p-10 md:p-16 md:pt-8">
@@ -47,8 +49,10 @@ const BlogPost = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
           {articles.map((article, key) => (
-            <div
+            <motion.div
               key={key}
+              whileHover={{ scale: 0.9 }}
+              whileTap={{ scale: 1.0 }}
               className="border border-blue-shade-2/50 bg-white rounded-lg overflow-hidden shadow shadow-blue-shade-4/50"
             >
               <img src={article.image} alt="" className="w-full mb-3" />
@@ -71,7 +75,7 @@ const BlogPost = () => {
                 </Link>
                 <p className="text-gray-700 mb-2">{article.date}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

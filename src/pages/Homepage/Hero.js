@@ -1,35 +1,55 @@
 import React from "react";
 import image from "../../assets/bg.jpg";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section
+    <motion.section
       className="bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${image})` }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
     >
       <div className="relative">
         <div className="absolute inset-0 bg-gradient-to-r from-white to-transparent"></div>
-
         <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
-          <div className="max-w-xl">
+          <motion.div
+            className="max-w-xl"
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          >
             <div className="mb-8">
-              <h1 className="text-3xl font-extrabold sm:text-5xl">
-                Welcome to
+              <motion.h1
+                className="text-3xl font-extrabold sm:text-5xl"
+                initial={{ y: 50, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+              >
+                Welcome to{" "}
                 <strong className="block font-extrabold text-blue-shade-3">
                   {" "}
                   Blue Data Consulting
                 </strong>
-              </h1>
-
-              <p className="mt-4 max-w-xl sm:text-xl/relaxed">
+              </motion.h1>
+              <motion.p
+                className="mt-4 max-w-xl sm:text-xl/relaxed"
+                initial={{ y: 50, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
+              >
                 Empowering businesses with cutting-edge technologies like AI,
                 ML, Data Science, IoT, and RPA, guiding you on the path to
                 success.
-              </p>
+              </motion.p>
             </div>
-
-            {/* <div className="flex flex-wrap gap-4"> */}
+            <motion.div
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
+            >
               <Link
                 to="/about"
                 onClick={() => {
@@ -39,15 +59,15 @@ const Hero = () => {
                     behavior: "smooth",
                   });
                 }}
-                className="px-6 py-3 font-medium text-[18px] text-white rounded-lg  bg-blue-shade-3 hover:bg-blue-shade-2"
+                className="px-6 py-3 font-medium text-[18px] text-white rounded-lg bg-blue-shade-3 hover:bg-blue-shade-2"
               >
                 Get Started
               </Link>
-            {/* </div> */}
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

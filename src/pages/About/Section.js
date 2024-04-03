@@ -2,14 +2,26 @@ import React from "react";
 import about1 from "../../assets/about1.jpg";
 import about2 from "../../assets/about2.jpg";
 import about3 from "../../assets/about3.jpg";
+import { motion } from "framer-motion";
 
 const Section = () => {
   return (
     <>
-      <section>
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-            <div className="max-w-lg">
+            <motion.div
+              className="max-w-lg"
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <h2 className="text-2xl font-bold text-blue-shade-3 sm:text-3xl">
                 About the company
               </h2>
@@ -28,30 +40,54 @@ const Section = () => {
                 approach, methodology, the technology chosen, accelerate the
                 project by contributing to solving problems, errors, and bugs.
               </p>
-            </div>
-            <div className="mt-12 md:mt-0">
+            </motion.div>
+            <motion.div
+              className="mt-12 md:mt-0"
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <img
                 src={about1}
                 alt=""
                 className="object-cover scale-90 md:scale-110 lg:scale-75 rounded-lg shadow-md"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       <div className="bg-white">
-        <div className="container mx-auto px-6 text-gray-600 md:px-12 xl:px-8">
+        <motion.div
+          className="container mx-auto px-6 text-gray-600 md:px-12 xl:px-8"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
-            <div className="md:w-5/12 lg:w-5/12 md:mr-4 mr-0">
+            <motion.div
+              className="md:w-5/12 lg:w-5/12 md:mr-4 mr-0"
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <img
                 src={about2}
                 alt=""
                 className="object-cover scale-75"
                 loading="lazy"
               />
-            </div>
-            <div className="md:w-7/12 lg:w-6/12">
+            </motion.div>
+            <motion.div
+              className="md:w-7/12 lg:w-6/12"
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <h2 className="text-2xl font-bold text-blue-shade-3 sm:text-3xl">
                 Our Vision
               </h2>
@@ -72,15 +108,26 @@ const Section = () => {
                 technology consulting company having consultants who solve every
                 problem with their innovative and creative approach.
               </p>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
 
-      <section>
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <div className="container mx-auto py-16 px-8 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-            <div className="max-w-lg">
+            <motion.div
+              className="max-w-lg"
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <h2 className="text-2xl font-bold text-blue-shade-3 sm:text-3xl">
                 Why us?
               </h2>
@@ -93,22 +140,28 @@ const Section = () => {
               <p className="mt-4 text-gray-600 text-[18px] text-justify">
                 With indepth knowledge to their profession, detailed real time
                 experience to solving problems, out consultants help in
-                translating client’s strategic direction to business process,
+                translating client's strategic direction to business process,
                 organization and IT while smoothly transitioning between field,
                 strategy, business goal, compliances and operations, maintaining
                 the measurable results.
               </p>
-            </div>
-            <div className="mt-12 md:mt-0">
+            </motion.div>
+            <motion.div
+              className="mt-12 md:mt-0"
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <img
                 src={about3}
                 alt=""
                 className="object-cover scale-90 md:scale-110 lg:scale-75 rounded-lg shadow-md"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

@@ -4,21 +4,40 @@ import Navbar from "../../components/Navbar";
 import image1 from "../../assets/tech1.jpg";
 import image2 from "../../assets/tech2.jpg";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Tech = () => {
   return (
     <div>
       <Navbar />
-      <section className="pt-32 bg-gradient-to-b from-blue-shade-4/65 to-blue-shade-5/85">
+      <motion.section className="pt-32 bg-gradient-to-b from-blue-shade-4/65 to-blue-shade-5/85">
         <div className="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 lg:max-w-5xl">
-          <h1 className="text-4xl font-bold leading-none sm:text-5xl text-blue-shade-3">
+          <motion.h1
+            className="text-4xl font-bold leading-none sm:text-5xl text-blue-shade-3"
+            initial={{ y: -50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
             Technology Consulting
-          </h1>
-          <p className="px-8 mt-8 mb-4 text-[18px] text-gray-700">
+          </motion.h1>
+          <motion.p
+            className="px-8 mt-8 mb-4 text-[18px] text-gray-700"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             Strategic Consulting for Digital Transformation and Emerging
             Technologies
-          </p>
-          <div className="flex flex-wrap justify-center">
+          </motion.p>
+          <motion.div
+            className="flex flex-wrap justify-center"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
             <Link
               to="/contact"
               className="px-4 py-2 m-2 bg-blue-shade-3 hover:bg-blue-shade-2 text-[16px] font-semibold rounded-lg text-white"
@@ -32,13 +51,24 @@ const Tech = () => {
             >
               Get started
             </Link>
-          </div>
+          </motion.div>
         </div>
-      </section>
-      <section>
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-            <div className="max-w-xl">
+            <motion.div
+              className="max-w-xl"
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <p className="mt-4 text-gray-600 text-[18px] text-justify">
                 As technologies such as Digital platforms, RPA, machine
                 learning, and AI increasingly become key drivers of
@@ -60,28 +90,51 @@ const Tech = () => {
                 strategy, they need to address the AI skills gap and integrate
                 ML practices into individual lines of business.
               </p>
-            </div>
-            <div className="mt-12 md:mt-0">
+            </motion.div>
+            <motion.div
+              className="mt-12 md:mt-0"
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <img
                 src={image1}
                 alt=""
                 className="object-cover scale-90 rounded-lg shadow-md"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
-      </section>
-      <section>
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-            <div className="mt-12 mr-16 md:mt-0">
+            <motion.div
+              className="mt-12 mr-16 md:mt-0"
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <img
                 src={image2}
                 alt=""
                 className="object-cover scale-90 rounded-lg shadow-md"
               />
-            </div>
-            <div className="max-w-xl">
+            </motion.div>
+            <motion.div
+              className="max-w-xl"
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <p className="mt-4 text-gray-600 text-[18px] text-justify">
                 A successful adaption of technology within the right timeline
                 requires the right approach & strategy which comes from
@@ -93,10 +146,10 @@ const Tech = () => {
                 as an extension to the internal team and help to develop the
                 strategy & adopt the right approach.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       <Footer />
     </div>

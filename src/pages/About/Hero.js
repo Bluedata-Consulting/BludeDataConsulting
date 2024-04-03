@@ -1,11 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="pb-24 pt-48 flex items-center justify-center bg-gradient-to-b from-blue-shade-4/65 to-blue-shade-5/85">
+    <motion.section className="pb-24 pt-48 flex items-center justify-center bg-gradient-to-b from-blue-shade-4/65 to-blue-shade-5/85">
       <div className="mx-auto max-w-5xl">
-        <div className="text-center">
+        <motion.div
+          className="text-center"
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           <p className="text-lg font-medium leading-8 text-blue-shade-1/80">
             Revolutionizing Businesses with Advanced Analytics and AI Solutions
           </p>
@@ -17,9 +24,14 @@ const Hero = () => {
             innovation and growth for businesses. Our solutions unlock insights
             and optimize processes, empowering organizations to stay ahead.
           </p>
-        </div>
-
-        <div className="mt-6 flex items-center justify-center gap-4">
+        </motion.div>
+        <motion.div
+          className="mt-6 flex items-center justify-center gap-4"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
           <Link
             to="/contact"
             onClick={() => {
@@ -33,9 +45,9 @@ const Hero = () => {
           >
             Let's Connect
           </Link>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

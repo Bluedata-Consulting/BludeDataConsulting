@@ -6,25 +6,40 @@ import scale1 from "../../assets/scale1.jpg";
 import scale2 from "../../assets/scale2.jpg";
 import scale3 from "../../assets/scale3.jpg";
 import scale4 from "../../assets/scale4.jpg";
+import { motion } from "framer-motion";
 
 const Scaling = () => {
   return (
     <div>
       <Navbar />
-      <section
-        className="pt-32 bg-gradient-to-b from-blue-shade-4/65 to-blue-shade-5/85"
-        // className="py-24 bg-cover bg-center bg-no-repeat"
-        // style={{ backgroundImage: `url(${image})` }}
-      >
+      <section className="pt-32 bg-gradient-to-b from-blue-shade-4/65 to-blue-shade-5/85">
         <div className="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 lg:max-w-5xl">
-          <h1 className="text-3xl font-bold leading-none text-blue-shade-3 sm:text-5xl">
+          <motion.h1
+            className="text-3xl font-bold leading-none text-blue-shade-3 sm:text-5xl"
+            initial={{ y: -50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
             Scaling Teams
-          </h1>
-          <p className="px-8 mt-8 mb-4 text-[17px] text-gray-700">
+          </motion.h1>
+          <motion.p
+            className="px-8 mt-8 mb-4 text-[17px] text-gray-700"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             Empowering Workforces Through Corporate Training and Talent
             Analytics in Advanced Technologies
-          </p>
-          <div className="flex flex-wrap justify-center">
+          </motion.p>
+          <motion.div
+            className="flex flex-wrap justify-center"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
             <Link
               to="/contact"
               onClick={() => {
@@ -38,13 +53,25 @@ const Scaling = () => {
             >
               Get started
             </Link>
-          </div>
+          </motion.div>
         </div>
       </section>
-      <section>
+
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-            <div className="max-w-xl">
+            <motion.div
+              className="max-w-xl"
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <p className="mt-4 text-gray-600 text-[18px] text-justify">
                 We help our clients in upskilling their existing workforce to
                 fill gaps in their skillsets by providing corporate training in
@@ -57,28 +84,52 @@ const Scaling = () => {
                 instructors, we provide successful learning and development
                 solutions to IT & non-IT clients.
               </p>
-            </div>
-            <div className="mt-12 md:mt-0">
+            </motion.div>
+            <motion.div
+              className="mt-12 md:mt-0"
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <img
                 src={scale1}
                 alt=""
                 className="object-cover scale-90 rounded-md shadow-md"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
-      </section>
-      <section>
+      </motion.section>
+
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <div className="container mx-auto py-10 px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-            <div className="mr-0 lg:mr-16 md:mt-0 scale-90">
+            <motion.div
+              className="mr-0 lg:mr-16 md:mt-0 scale-90"
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <img
                 src="https://www.bluedataconsulting.in/wp-content/uploads/2021/11/bluedata_consulting_coporate_training_why_us_technology_upskillling_porgrams_best_vendor.jpg"
                 alt=""
                 className="object-cover h-[90%] scale-75 rounded-lg "
               />
-            </div>
-            <div className="max-w-2xl">
+            </motion.div>
+            <motion.div
+              className="max-w-2xl"
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <h2 className="text-2xl font-bold text-blue-shade-2 sm:text-3xl">
                 Why companies choose us for their upskilling needs?
               </h2>
@@ -118,14 +169,26 @@ const Scaling = () => {
                   e-learning.
                 </li>
               </ul>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </section>
-      <section>
+      </motion.section>
+
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-            <div className="max-w-4xl">
+            <motion.div
+              className="max-w-xl"
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <h2 className="text-2xl font-bold text-blue-shade-2 sm:text-3xl">
                 Talent assessment
               </h2>
@@ -140,29 +203,52 @@ const Scaling = () => {
                 Middle East region for talent assessment and analytics while
                 delivering multiple corporate training programs.
               </p>
-            </div>
-            <div className="mt-12 md:mt-0 flex justify-center">
+            </motion.div>
+            <motion.div
+              className="mt-12 md:mt-0 flex justify-center"
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <img
                 src={scale2}
                 alt=""
                 className="object-cover scale-90  rounded-lg shadow-md"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section>
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <div className="container mx-auto py-10 px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-            <div className="mr-0 lg:mr-16 md:mt-0">
+            <motion.div
+              className="mr-0 lg:mr-16 md:mt-0"
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <img
                 src={scale3}
                 alt=""
                 className="object-cover rounded-lg shadow-md"
               />
-            </div>
-            <div className="max-w-2xl">
+            </motion.div>
+            <motion.div
+              className="max-w-2xl"
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <h2 className="text-2xl font-bold text-blue-shade-2 sm:text-3xl">
                 Certification from technology providers
               </h2>
@@ -179,15 +265,26 @@ const Scaling = () => {
                   AWS, UiPath, Automation Anywhere, etc.
                 </li>
               </ul>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section>
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-            <div className="max-w-xl">
+            <motion.div
+              className="max-w-xl"
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <h2 className="text-2xl font-bold text-blue-shade-2 sm:text-3xl">
                 Project based customized training
               </h2>
@@ -205,17 +302,23 @@ const Scaling = () => {
                 these products and tools efficiently in the project
                 implementation.
               </p>
-            </div>
-            <div className="mt-12 md:mt-0">
+            </motion.div>
+            <motion.div
+              className="mt-12 md:mt-0"
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <img
                 src={scale4}
                 alt=""
                 className="object-cover scale-90 rounded-lg shadow-md"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
-      </section>
+      </motion.section>
       <Footer />
     </div>
   );

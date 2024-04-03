@@ -16,6 +16,9 @@ import arihant from "../../assets/arihant.png";
 import feny from "../../assets/feny.png";
 import madhav from "../../assets/madhav.png";
 import sageer from "../../assets/sageer.png";
+import vikash from "../../assets/vikash.png";
+import dhruvika from "../../assets/dhruvika.png";
+import { motion } from "framer-motion"; // Import Framer Motion
 
 const Team = () => {
   const teamMembers = [
@@ -82,7 +85,7 @@ const Team = () => {
     {
       name: "Vikash Singh",
       role: "Associate Data Scientist",
-      image: "",
+      image: vikash,
     },
     {
       name: "Devendra Parmar",
@@ -92,7 +95,7 @@ const Team = () => {
     {
       name: "Dhruvika Patel",
       role: "Human Resources",
-      image: "",
+      image: dhruvika,
     },
     {
       name: "Arihant Jain",
@@ -152,7 +155,14 @@ const Team = () => {
           <div className="flex justify-center my-12">
             <div className="grid gap-10 row-gap-8 mx-auto sm:row-gap-10 sm:grid-cols-2 lg:grid-cols-3 ">
               {teamMembers.map((member, key) => (
-                <div className="flex">
+                <motion.div
+                  key={key}
+                  className="flex"
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: key * 0.1 }}
+                >
                   <img
                     className="object-cover w-28 h-28 mr-4 rounded-full shadow"
                     src={member.image}
@@ -164,7 +174,7 @@ const Team = () => {
                     </p>
                     <p className="text-sm text-gray-700">{member.role}</p>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>

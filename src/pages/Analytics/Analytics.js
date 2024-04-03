@@ -4,6 +4,7 @@ import Footer from "../../components/Footer";
 import image1 from "../../assets/ai1.jpg";
 import image2 from "../../assets/ai2.jpg";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Analytics = () => {
   return (
@@ -11,14 +12,32 @@ const Analytics = () => {
       <Navbar />
       <section className="pt-32 bg-gradient-to-b from-blue-shade-4/65 to-blue-shade-5/85">
         <div className="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 xl:max-w-5xl">
-          <h1 className="text-4xl font-bold text-blue-shade-3 leading-none sm:text-5xl">
+          <motion.h1
+            className="text-4xl font-bold text-blue-shade-3 leading-none sm:text-5xl"
+            initial={{ y: -50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
             Analytics & AI Solutions
-          </h1>
-          <p className="px-8 mt-8 mb-4 text-[18px] text-gray-800">
+          </motion.h1>
+          <motion.p
+            className="px-8 mt-8 mb-4 text-[18px] text-gray-800"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             Driving Business Transformation through Advanced Analytics and AI
             Solutions
-          </p>
-          <div className="flex flex-wrap justify-center">
+          </motion.p>
+          <motion.div
+            className="flex flex-wrap justify-center"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
             <Link
               to="/contact"
               onClick={() => {
@@ -32,14 +51,25 @@ const Analytics = () => {
             >
               Get started
             </Link>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      <section>
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-            <div className="max-w-xl">
+            <motion.div
+              className="max-w-xl"
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <p className="mt-4 text-gray-600 text-[18px] leading-8 text-justify">
                 Analytics includes foundational capabilities and tools that
                 generate powerful insights. Data management, data governance,
@@ -49,28 +79,52 @@ const Analytics = () => {
                 regulatory environment with mandates on data residency, privacy,
                 and usage.
               </p>
-            </div>
-            <div className="mt-12 md:mt-0">
+            </motion.div>
+            <motion.div
+              className="mt-12 md:mt-0"
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <img
                 src={image1}
                 alt=""
                 className="object-cover scale-75 rounded-lg shadow-md"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
-      </section>
-      <section>
+      </motion.section>
+
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <div className="container mx-auto py-10 px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-            <div className="mt-12 mr-16 md:mt-0">
+            <motion.div
+              className="mt-12 mr-16 md:mt-0"
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <img
                 src={image2}
                 alt=""
                 className="object-cover scale-90 rounded-lg shadow-md"
               />
-            </div>
-            <div className="max-w-xl">
+            </motion.div>
+            <motion.div
+              className="max-w-xl"
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <p className="mt-4 text-gray-600 text-[18px] leading-8 text-justify">
                 We at Blue Data Consulting are a team of experts, have been
                 helping organizations in building AI & Data products. Our
@@ -78,14 +132,21 @@ const Analytics = () => {
                 multiple organizations and building the new age AI & analytics
                 products.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </section>
+      </motion.section>
+
       <section>
         <div className="container mx-auto py-4 lg:py-8 px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 items-center">
-            <div className="">
+            <motion.div
+              className=""
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <h2 className="text-3xl text-center font-bold text-blue-shade-2 lg:text-4xl">
                 Cognitive Technologies
               </h2>
@@ -118,15 +179,21 @@ const Analytics = () => {
                   products.
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      <section className="">
+      <section>
         <div className="container mx-auto pt-8 pb-2 px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 items-center">
-            <div className="max-w-[85%] mx-auto">
+            <motion.div
+              className="max-w-[85%] mx-auto"
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <h2 className="text-2xl font-semibold text-blue-shade-2 sm:text-3xl">
                 Computer Vision
               </h2>
@@ -141,7 +208,7 @@ const Analytics = () => {
                 We at Blue Data Consulting have the right set of experts to
                 deliver computer vision-based applications and products.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -149,7 +216,13 @@ const Analytics = () => {
       <section>
         <div className="container mx-auto pt-8 pb-10 px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 items-center">
-            <div className="max-w-[85%] mx-auto">
+            <motion.div
+              className="max-w-[85%] mx-auto"
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <h2 className="text-2xl font-semibold text-blue-shade-2 sm:text-3xl">
                 Natural Language Processing
               </h2>
@@ -166,7 +239,7 @@ const Analytics = () => {
                 We offer all of these functionalities as solutions to our
                 customers, integrate these functionalities with client products.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

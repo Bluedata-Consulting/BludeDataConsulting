@@ -24,7 +24,7 @@ const Contact = () => {
       <section className="bg-white">
         <div className=" px-6 pb-28 mx-auto">
           <div className="flex justify-center gap-12 mt-10">
-            <div className="overflow-hidden rounded-lg lg:col-span-2 lg:w-2/3 h-[500px] ">
+            <div className="overflow-hidden rounded-lg lg:col-span-2 w-full lg:w-2/3 h-[500px] ">
               <iframe
                 width="100%"
                 height="100%"

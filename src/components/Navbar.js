@@ -103,7 +103,7 @@ const Header = () => {
             <span className="scale-100">
               <img src={logo} alt="" className="scale-50" />
             </span>
-            <span className="font-bold text-blue-shade-2 hover:text-blue-shade-3">
+            <span className="hidden md:inline-block font-bold text-blue-shade-2 hover:text-blue-shade-3">
               BLUE DATA CONSULTING
             </span>
           </Link>
@@ -282,7 +282,7 @@ const Header = () => {
           </div>
 
           {/* Hamburger Menu Icon */}
-          <div className="lg:hidden">
+          <div className="lg:hidden ml-auto">
             <Menu
               onClick={toggleMenu}
               className="h-6 w-6 cursor-pointer text-blue-shade-2 hover:text-blue-shade-3"
