@@ -24,9 +24,9 @@ const Homepage = () => {
       <AnimatedComponent>
         <Testimonals />
       </AnimatedComponent>
-      <AnimatedComponent>
+      {/* <AnimatedComponent> */}
         <Article />
-      </AnimatedComponent>
+      {/* </AnimatedComponent> */}
       <Footer />
     </div>
   );

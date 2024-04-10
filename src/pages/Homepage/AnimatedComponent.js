@@ -14,7 +14,7 @@ const AnimatedComponent = ({ children }) => {
           }
         });
       },
-      { threshold: 0.5 } // Adjust this value to control when the animation should trigger
+      { threshold: 1 } // Adjust this value to control when the animation should trigger
     );
 
     observerRef.current = observer;

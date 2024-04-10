@@ -18,7 +18,7 @@ const Scaling = () => {
             className="text-3xl font-bold leading-none text-blue-shade-3 sm:text-5xl"
             initial={{ y: -50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 1.8 }}
             viewport={{ once: true }}
           >
             Scaling Teams
@@ -27,7 +27,7 @@ const Scaling = () => {
             className="px-8 mt-8 mb-4 text-[17px] text-gray-700"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 1.8, delay: 2.0 }}
             viewport={{ once: true }}
           >
             Empowering Workforces Through Corporate Training and Talent
@@ -37,7 +37,7 @@ const Scaling = () => {
             className="flex flex-wrap justify-center"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 1.8, delay: 2.0 }}
             viewport={{ once: true }}
           >
             <Link
@@ -60,7 +60,7 @@ const Scaling = () => {
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 1.8 }}
         viewport={{ once: true }}
       >
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-12">
@@ -69,7 +69,7 @@ const Scaling = () => {
               className="max-w-xl"
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <p className="mt-4 text-gray-600 text-[18px] text-justify">
@@ -89,7 +89,7 @@ const Scaling = () => {
               className="mt-12 md:mt-0"
               initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <img
@@ -105,7 +105,7 @@ const Scaling = () => {
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 1.8 }}
         viewport={{ once: true }}
       >
         <div className="container mx-auto py-10 px-4 sm:px-6 lg:px-12">
@@ -114,7 +114,7 @@ const Scaling = () => {
               className="mr-0 lg:mr-16 md:mt-0 scale-90"
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <img
@@ -127,7 +127,7 @@ const Scaling = () => {
               className="max-w-2xl"
               initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <h2 className="text-2xl font-bold text-blue-shade-2 sm:text-3xl">
@@ -177,7 +177,7 @@ const Scaling = () => {
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 1.8 }}
         viewport={{ once: true }}
       >
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-12">
@@ -186,7 +186,7 @@ const Scaling = () => {
               className="max-w-xl"
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <h2 className="text-2xl font-bold text-blue-shade-2 sm:text-3xl">
@@ -208,7 +208,7 @@ const Scaling = () => {
               className="mt-12 md:mt-0 flex justify-center"
               initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <img
@@ -224,7 +224,7 @@ const Scaling = () => {
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 1.8 }}
         viewport={{ once: true }}
       >
         <div className="container mx-auto py-10 px-4 sm:px-6 lg:px-12">
@@ -233,7 +233,7 @@ const Scaling = () => {
               className="mr-0 lg:mr-16 md:mt-0"
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <img
@@ -246,7 +246,7 @@ const Scaling = () => {
               className="max-w-2xl"
               initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <h2 className="text-2xl font-bold text-blue-shade-2 sm:text-3xl">
@@ -273,7 +273,7 @@ const Scaling = () => {
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 1.8 }}
         viewport={{ once: true }}
       >
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-12">
@@ -282,7 +282,7 @@ const Scaling = () => {
               className="max-w-xl"
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <h2 className="text-2xl font-bold text-blue-shade-2 sm:text-3xl">
@@ -307,7 +307,7 @@ const Scaling = () => {
               className="mt-12 md:mt-0"
               initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <img

@@ -16,7 +16,7 @@ const Tech = () => {
             className="text-4xl font-bold leading-none sm:text-5xl text-blue-shade-3"
             initial={{ y: -50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 1.8 }}
             viewport={{ once: true }}
           >
             Technology Consulting
@@ -25,7 +25,7 @@ const Tech = () => {
             className="px-8 mt-8 mb-4 text-[18px] text-gray-700"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 1.8, delay: 2.0 }}
             viewport={{ once: true }}
           >
             Strategic Consulting for Digital Transformation and Emerging
@@ -35,7 +35,7 @@ const Tech = () => {
             className="flex flex-wrap justify-center"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 1.8, delay: 2.0 }}
             viewport={{ once: true }}
           >
             <Link
@@ -53,11 +53,11 @@ const Tech = () => {
             </Link>
           </motion.div>
         </div>
-      </motion.section>
+      </motion.section> 
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 1.8 }}
         viewport={{ once: true }}
       >
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
@@ -66,7 +66,7 @@ const Tech = () => {
               className="max-w-xl"
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <p className="mt-4 text-gray-600 text-[18px] text-justify">
@@ -95,7 +95,7 @@ const Tech = () => {
               className="mt-12 md:mt-0"
               initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <img
@@ -110,7 +110,7 @@ const Tech = () => {
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 1.8 }}
         viewport={{ once: true }}
       >
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
@@ -119,7 +119,7 @@ const Tech = () => {
               className="mt-12 mr-16 md:mt-0"
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <img
@@ -132,7 +132,7 @@ const Tech = () => {
               className="max-w-xl"
               initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <p className="mt-4 text-gray-600 text-[18px] text-justify">

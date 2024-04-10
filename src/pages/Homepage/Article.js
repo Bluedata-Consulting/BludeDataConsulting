@@ -51,7 +51,7 @@ const BlogPost = () => {
           {articles.map((article, key) => (
             <motion.div
               key={key}
-              whileHover={{ scale: 0.9 }}
+              whileHover={{ scale: 0.97 }}
               whileTap={{ scale: 1.0 }}
               className="border border-blue-shade-2/50 bg-white rounded-lg overflow-hidden shadow shadow-blue-shade-4/50"
             >

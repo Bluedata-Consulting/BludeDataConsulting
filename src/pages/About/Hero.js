@@ -10,7 +10,7 @@ const Hero = () => {
           className="text-center"
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 1.8 }}
           viewport={{ once: true }}
         >
           <p className="text-lg font-medium leading-8 text-blue-shade-1/80">
@@ -29,7 +29,7 @@ const Hero = () => {
           className="mt-6 flex items-center justify-center gap-4"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          transition={{ duration: 1.8, delay: 2.0 }}
           viewport={{ once: true }}
         >
           <Link

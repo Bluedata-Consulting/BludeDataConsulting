@@ -19,14 +19,14 @@ const Hero = () => {
             className="max-w-xl"
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            transition={{ duration: 1.8, ease: "easeOut", delay: 0.4 }}
           >
             <div className="mb-8">
               <motion.h1
                 className="text-3xl font-extrabold sm:text-5xl"
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+                transition={{ duration: 1.8, ease: "easeOut", delay: 0.4 }}
               >
                 Welcome to{" "}
                 <strong className="block font-extrabold text-blue-shade-3">
@@ -38,7 +38,7 @@ const Hero = () => {
                 className="mt-4 max-w-xl sm:text-xl/relaxed"
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
+                transition={{ duration: 1.8, ease: "easeOut", delay: 0.4 }}
               >
                 Empowering businesses with cutting-edge technologies like AI,
                 ML, Data Science, IoT, and RPA, guiding you on the path to
@@ -48,7 +48,7 @@ const Hero = () => {
             <motion.div
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
+              transition={{ duration: 1.8, ease: "easeOut", delay: 0.4 }}
             >
               <Link
                 to="/about"

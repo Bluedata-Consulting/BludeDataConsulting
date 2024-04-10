@@ -10,7 +10,7 @@ const Section = () => {
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 1.8 }}
         viewport={{ once: true }}
       >
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-12">
@@ -19,7 +19,7 @@ const Section = () => {
               className="max-w-lg"
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <h2 className="text-2xl font-bold text-blue-shade-3 sm:text-3xl">
@@ -45,7 +45,7 @@ const Section = () => {
               className="mt-12 md:mt-0"
               initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <img
@@ -63,7 +63,7 @@ const Section = () => {
           className="container mx-auto px-6 text-gray-600 md:px-12 xl:px-8"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 1.8 }}
           viewport={{ once: true }}
         >
           <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
@@ -71,7 +71,7 @@ const Section = () => {
               className="md:w-5/12 lg:w-5/12 md:mr-4 mr-0"
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <img
@@ -85,7 +85,7 @@ const Section = () => {
               className="md:w-7/12 lg:w-6/12"
               initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <h2 className="text-2xl font-bold text-blue-shade-3 sm:text-3xl">
@@ -116,7 +116,7 @@ const Section = () => {
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 1.8 }}
         viewport={{ once: true }}
       >
         <div className="container mx-auto py-16 px-8 lg:px-12">
@@ -125,7 +125,7 @@ const Section = () => {
               className="max-w-lg"
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <h2 className="text-2xl font-bold text-blue-shade-3 sm:text-3xl">
@@ -150,7 +150,7 @@ const Section = () => {
               className="mt-12 md:mt-0"
               initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <img

@@ -16,7 +16,7 @@ const Analytics = () => {
             className="text-4xl font-bold text-blue-shade-3 leading-none sm:text-5xl"
             initial={{ y: -50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 1.8 }}
             viewport={{ once: true }}
           >
             Analytics & AI Solutions
@@ -25,7 +25,7 @@ const Analytics = () => {
             className="px-8 mt-8 mb-4 text-[18px] text-gray-800"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 1.8, delay: 2.0 }}
             viewport={{ once: true }}
           >
             Driving Business Transformation through Advanced Analytics and AI
@@ -35,7 +35,7 @@ const Analytics = () => {
             className="flex flex-wrap justify-center"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 1.8, delay: 2.0 }}
             viewport={{ once: true }}
           >
             <Link
@@ -58,7 +58,7 @@ const Analytics = () => {
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 1.8 }}
         viewport={{ once: true }}
       >
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
@@ -67,7 +67,7 @@ const Analytics = () => {
               className="max-w-xl"
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <p className="mt-4 text-gray-600 text-[18px] leading-8 text-justify">
@@ -84,7 +84,7 @@ const Analytics = () => {
               className="mt-12 md:mt-0"
               initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <img
@@ -100,7 +100,7 @@ const Analytics = () => {
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 1.8 }}
         viewport={{ once: true }}
       >
         <div className="container mx-auto py-10 px-4 sm:px-6 lg:px-8">
@@ -109,7 +109,7 @@ const Analytics = () => {
               className="mt-12 mr-16 md:mt-0"
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <img
@@ -122,7 +122,7 @@ const Analytics = () => {
               className="max-w-xl"
               initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <p className="mt-4 text-gray-600 text-[18px] leading-8 text-justify">
@@ -144,7 +144,7 @@ const Analytics = () => {
               className=""
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <h2 className="text-3xl text-center font-bold text-blue-shade-2 lg:text-4xl">
@@ -191,7 +191,7 @@ const Analytics = () => {
               className="max-w-[85%] mx-auto"
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <h2 className="text-2xl font-semibold text-blue-shade-2 sm:text-3xl">
@@ -220,7 +220,7 @@ const Analytics = () => {
               className="max-w-[85%] mx-auto"
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.8 }}
               viewport={{ once: true }}
             >
               <h2 className="text-2xl font-semibold text-blue-shade-2 sm:text-3xl">
