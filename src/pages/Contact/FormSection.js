@@ -35,32 +35,33 @@ const FormSection = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const endpoint = "https://formspree.io/f/xwkgvppn";
-    fetch(endpoint, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        console.log("Form submitted successfully:", data);
-        toast.success("Form submitted successfully!");
-        handleClear();
-      })
-      .catch((error) => {
-        console.error("Error submitting form:", error);
-        toast.error(
-          "Failed to submit form. Please try again or try contact on given mail."
-        );
-        handleClear();
+
+    const endpoint = "https://formspree.io/f/myyrbbdo"; // Your Formspree endpoint
+
+    try {
+      const response = await fetch(endpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       });
+
+      if (!response.ok) {
+        const error = await response.json();
+        throw new Error(`Network response was not ok: ${error.message}`);
+      }
+
+      console.log("Form submitted successfully:", response.data);
+      toast.success("Form submitted successfully!");
+      handleClear();
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast.error(
+        "Failed to submit form. Please check the form data and try again."
+      );
+      handleClear();
+    }
   };
 
   return (
@@ -78,7 +79,7 @@ const FormSection = () => {
       />
       <div className="container mx-auto my-4 px-4 lg:px-20">
         <div className="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={(e) => handleSubmit(e)}>
             <div className="flex">
               <h1 className="font-bold uppercase text-5xl text-blue-shade-2">
                 Send us a message
