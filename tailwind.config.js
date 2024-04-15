@@ -10,6 +10,7 @@ module.exports = {
         "blue-shade-3": "#114DC7",
         "blue-shade-4": "#135BEA",
         "blue-shade-5": "#DDEDFF",
+        "blue-shade-6": "#74b3fa",
       },
     },
   },

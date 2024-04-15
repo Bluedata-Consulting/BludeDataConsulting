@@ -242,6 +242,24 @@ const Header = () => {
                     </Link>
 
                     <Link
+                      to="/team"
+                      className="block px-4 py-2 font-semibold text-md text-blue-shade-2 hover:text-blue-shade-3"
+                      onClick={() => {
+                        window.scroll({
+                          top: 0,
+                          left: 0,
+                          behavior: "smooth",
+                        });
+                        handleDropdownLeave(
+                          insightDropdownContainerRef,
+                          setIsInsightOpen
+                        );
+                      }}
+                    >
+                      Team
+                    </Link>
+
+                    <Link
                       to="/career"
                       className="block px-4 py-2 font-semibold text-md text-blue-shade-2 hover:text-blue-shade-3"
                       onClick={() => {
@@ -259,23 +277,6 @@ const Header = () => {
                       Career
                     </Link>
 
-                    <Link
-                      to="/team"
-                      className="block px-4 py-2 font-semibold text-md text-blue-shade-2 hover:text-blue-shade-3"
-                      onClick={() => {
-                        window.scroll({
-                          top: 0,
-                          left: 0,
-                          behavior: "smooth",
-                        });
-                        handleDropdownLeave(
-                          insightDropdownContainerRef,
-                          setIsInsightOpen
-                        );
-                      }}
-                    >
-                      Team
-                    </Link>
                     <Link
                       to="/contact"
                       className="block px-4 py-2 font-semibold text-md text-blue-shade-2 hover:text-blue-shade-3"
@@ -424,6 +425,20 @@ const Header = () => {
                           }}
                         >
                           About
+                        </Link>
+                        <Link
+                          to="/career"
+                          className="block text-lg text-white hover:text-blue-shade-5"
+                          onClick={() => {
+                            window.scroll({
+                              top: 0,
+                              left: 0,
+                              behavior: "smooth",
+                            });
+                            closeDropdowns();
+                          }}
+                        >
+                          Career
                         </Link>
                         <Link
                           to="/contact"
