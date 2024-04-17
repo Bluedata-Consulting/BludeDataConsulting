@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# Blue Data Consulting
+Documentation for Blue Data Consulting Website.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## File Structure
 
-## Available Scripts
+The project consists of the following files and directories:
+1. **/public/**:
+   - Contains public assets and files:
+      - `index.html`: Main HTML file serving as the entry point of the application.
+      - `logo40.png`: Logo image used in the project.
+      - `manifest.json`: Manifest file for Progressive Web App (PWA) configuration.
+      - `robots.txt`: Text file for configuring web crawler behavior.
 
-In the project directory, you can run:
 
-### `npm start`
+2. **/src/assets/**:
+   - This directory contains static assets such as images used in the project. It's a common practice to keep assets separate from code for better organization.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **/src/components/**:
+   - This directory contains reusable React components that are used across different pages of the application. These components may include things like headers, footers, navigation bars, buttons, and other UI elements.
+     - `Homepage.js`: Represents the homepage of the application.
+     - `About.js`: Represents the about page.
+     - `Contact.js`: Represents the contact page.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **/src/pages/**:
+   - This directory contains React components representing different pages of the application. Each page component typically corresponds to a specific route defined in the routing configuration.
+      - **About**: About page components.
+         - **About.js**: Main component for the About page.
+         - **Hero.js**: Hero section component.
+         - **Section.js**: Additional sections or subsections of the About page.
+      - **Analytics**: Analytics page component.
+         - **Analytics.js**: Main component for the Analytics page.
+      - **Article**: Article page components.
+         - **Article1.js**, **Article2.js**, **Article3.js**: Components for different articles.
+      - **Career**: Career page component.
+         - **Career.js**: Main component for the Career page.
+      - **Contact**: Contact page components.
+         - **Contact.js**: Main component for the Contact page.
+         - **FormSection.js**: Component for the contact form section.
+         - **Team.js**: Component for displaying team members.
+      - **Homepage**: Homepage components.
+         - **AnimatedComponent.js**: Component for animated elements on the homepage.
+         - **Article.js**: Component for displaying articles on the homepage.
+         - **Hero.js**: Hero section component.
+         - **Homepage.js**: Main component for the homepage.
+         - **Intro.js**: Introduction section component.
+         - **Services.js**: Component for displaying services offered.
+         - **Testimonals.js**: Component for displaying testimonials.
+      - **Scaling**: Scaling page component.
+         - **Scaling.js**: Main component for the Scaling page.
+      - **Tech**: Tech page component.
+         - **Tech.js**: Main component for the Tech page.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. **App.js**:
+   - This file is the main component of the application. It defines the routing configuration using React Router. It maps specific routes to their corresponding page components.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+6. **index.js**:
+   - This file is the entry point of the application. It renders the root component (`App`) into the DOM and configures any necessary settings or libraries.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+7. **index.css**:
+   - This file contains global styles for the application. It may include CSS rules that apply to the entire application, such as typography, color schemes, layout styles, etc.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+8. **tailwind.config.js**:
+   - This file is the configuration file for Tailwind CSS. It allows you to customize the default configuration of Tailwind CSS, such as adding new colors, extending existing utility classes, or configuring purge settings for production builds.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Deploying 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Build Your React Application:**
+   - Open a terminal window.
+   - Navigate to your React project directory.
+   - Run the following command to build your application for production:
+     
+     ```bash 
+     npm run build 
+     ```
+   - This command generates a `build` folder containing optimized static assets for deployment.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Access cPanel File Manager:**
+   - Log in to your cPanel hosting account.
+   - Navigate to the File Manager section.
 
-### Code Splitting
+3. **Upload Build Files to public_html:**
+   - In the File Manager, locate the `public_html` directory.
+   - Open the `public_html` directory and upload the contents of the `build` folder (generated by `npm run build`).
+   - Ensure that all files and folders from the `build` directory are uploaded to the root of the `public_html` directory.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. **Verify Deployment:**
+   - Once you've uploaded your files, visit your domain in a web browser to verify that your React application is deployed successfully.
 
-### Analyzing the Bundle Size
+5. **Testing:**
+   - Test all the functionalities of your application to ensure that everything is working as expected in the production environment.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+By following these steps, you should be able to deploy your React website on cPanel successfully using the build command.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
