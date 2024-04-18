@@ -145,7 +145,7 @@ const FormSection = () => {
         <div className="w-full lg:-mt-96 lg:w-1/3 px-8 py-12 ml-auto bg-blue-shade-2/95 rounded-2xl">
           <div className="flex flex-col text-white">
             <h1 className="font-bold uppercase text-4xl my-4">
-              Drop in our office
+              Visit our Office
             </h1>
             <p className="text-gray-300">
               We would love to hear from you. Feel free to ask to have a call.
