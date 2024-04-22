@@ -32,52 +32,55 @@ const BlogPost = () => {
   ];
 
   return (
-    <div className="">
-      <div className="max-w-screen-2xl mx-auto p-5 sm:p-10 md:p-16 md:pt-8">
-        <div className="flex flex-wrap justify-center ">
-          <div className="w-full">
-            <div className="text-center mx-auto mb-[60px] lg:mb-12">
-              <h2 className="font-bold text-3xl sm:text-4xl md:text-[40px] text-blue-shade-3 mb-4">
-                Latest Articles
-              </h2>
-              <p className="text-md text-gray-700 md:text-lg tracking-wide">
-                Get more insights about business, planning, analytics and
-                technology.
-              </p>
-            </div>
+    <div className="max-w-screen-2xl mx-auto p-5 sm:p-10 md:p-16 md:pt-8">
+      <div className="flex flex-wrap justify-center ">
+        <div className="w-full">
+          <div className="text-center mx-auto mb-[60px] lg:mb-12">
+            <h2 className="font-bold text-3xl sm:text-4xl md:text-[40px] text-blue-shade-3 mb-4">
+              Latest Articles
+            </h2>
+            <p className="text-md text-gray-700 md:text-lg tracking-wide">
+              Get more insights about business, planning, analytics and
+              technology.
+            </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
-          {articles.map((article, key) => (
-            <motion.div
-              key={key}
-              whileHover={{ scale: 0.97 }}
-              whileTap={{ scale: 1.0 }}
-              className="border border-blue-shade-2/50 bg-white rounded-lg overflow-hidden shadow shadow-blue-shade-4/50"
-            >
-              <img src={article.image} alt="" className="w-full mb-3" />
-              <div className="p-4 pt-2">
-                <div className="text-sm text-gray-700 flex items-center mb-2">
-                  {article.heading}
-                </div>
-                <Link
-                  to={article.link}
-                  onClick={() => {
-                    window.scroll({
-                      top: 0,
-                      left: 0,
-                      behavior: "smooth",
-                    });
-                  }}
-                  className="text-blue-shade-3 font-bold text-lg mb-2 hover:text-blue-shade-2 inline-block"
-                >
-                  {article.title}
-                </Link>
-                <p className="text-gray-700 mb-2">{article.date}</p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
+        {articles.map((article, key) => (
+          <motion.div
+            key={key}
+            whileHover={{ scale: 0.97 }}
+            whileTap={{ scale: 1.0 }}
+            className="border border-blue-shade-2/50 bg-white rounded-lg overflow-hidden shadow shadow-blue-shade-4/50"
+          >
+            <img
+              src={article.image}
+              alt=""
+              className="w-full mb-3"
+              loading="lazy"
+            />
+            <div className="p-4 pt-2">
+              <div className="text-sm text-gray-700 flex items-center mb-2">
+                {article.heading}
               </div>
-            </motion.div>
-          ))}
-        </div>
+              <Link
+                to={article.link}
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+                className="text-blue-shade-3 font-bold text-lg mb-2 hover:text-blue-shade-2 inline-block"
+              >
+                {article.title}
+              </Link>
+              <p className="text-gray-700 mb-2">{article.date}</p>
+            </div>
+          </motion.div>
+        ))}
       </div>
     </div>
   );

@@ -38,7 +38,7 @@ const Services = () => {
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
       >
         <motion.h2
-          className="max-w-lg mb-2 font-sans text-3xl font-bold leading-none tracking-normal sm:text-4xl md:mx-auto text-blue-shade-3"
+          className="max-w-lg mb-2 text-3xl font-bold leading-none tracking-normal sm:text-4xl md:mx-auto text-blue-shade-3"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}

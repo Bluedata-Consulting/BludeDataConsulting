@@ -5,8 +5,9 @@ import Intro from "./Intro";
 import Hero from "./Hero";
 import Article from "./Article";
 import Services from "./Services";
-import Testimonals from "./Testimonals";
+// import Testimonals from "./Testimonals";
 import AnimatedComponent from "./AnimatedComponent";
+import TestimonialsSlider from "./TestimonalsSlider";
 
 const Homepage = () => {
   return (
@@ -22,7 +23,8 @@ const Homepage = () => {
         <Services />
       </AnimatedComponent>
       <AnimatedComponent>
-        <Testimonals />
+        {/* <Testimonals /> */}
+        <TestimonialsSlider />
       </AnimatedComponent>
       {/* <AnimatedComponent> */}
       <Article />

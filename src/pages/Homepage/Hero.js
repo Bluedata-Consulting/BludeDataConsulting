@@ -14,7 +14,7 @@ const Hero = () => {
     >
       <div className="relative">
         <div className="absolute inset-0 bg-gradient-to-r from-white to-transparent"></div>
-        <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+        <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:pr -8">
           <motion.div
             className="max-w-xl"
             initial={{ x: -100, opacity: 0 }}
@@ -23,19 +23,19 @@ const Hero = () => {
           >
             <div className="mb-8">
               <motion.h1
-                className="text-3xl font-extrabold sm:text-5xl"
+                className="text-3xl font-extrabold sm:text-5xl leading-normal"
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1.8, ease: "easeOut", delay: 0.4 }}
               >
                 Welcome to{" "}
-                <strong className="block font-extrabold text-blue-shade-3">
+                <p className="block font-extrabold text-blue-shade-3 leading-normal">
                   {" "}
                   Blue Data Consulting
-                </strong>
+                </p>
               </motion.h1>
               <motion.p
-                className="mt-4 max-w-xl sm:text-xl/relaxed"
+                className="mt-4 max-w-xl sm:text-xl"
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1.8, ease: "easeOut", delay: 0.4 }}

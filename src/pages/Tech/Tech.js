@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Tech = () => {
-  return (
+  return (  
     <div>
       <Navbar />
 
@@ -55,51 +55,6 @@ const Tech = () => {
           </motion.div>
         </div>
       </section>
-
-      {/* <motion.section className="pt-32 bg-gradient-to-b from-blue-shade-4/65 to-blue-shade-5/85">
-        <div className="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 lg:max-w-5xl">
-          <motion.h1
-            className="text-4xl font-bold leading-none sm:text-5xl text-blue-shade-3"
-            initial={{ y: -50, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1.8 }}
-            viewport={{ once: true }}
-          >
-            Technology Consulting
-          </motion.h1>
-          <motion.p
-            className="px-8 mt-8 mb-4 text-[18px] text-gray-700"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1.8, delay: 2.0 }}
-            viewport={{ once: true }}
-          >
-            Strategic Consulting for Digital Transformation and Emerging
-            Technologies
-          </motion.p>
-          <motion.div
-            className="flex flex-wrap justify-center"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1.8, delay: 2.0 }}
-            viewport={{ once: true }}
-          >
-            <Link
-              to="/contact"
-              className="px-4 py-2 m-2 bg-blue-shade-3 hover:bg-blue-shade-2 text-[16px] font-semibold rounded-lg text-white"
-              onClick={() => {
-                window.scroll({
-                  top: 0,
-                  left: 0,
-                  behavior: "smooth",
-                });
-              }}
-            >
-              Get started
-            </Link>
-          </motion.div>
-        </div>
-      </motion.section> */}
 
       <div className="sticky top-0 flex flex-col items-center justify-center bg-gradient-to-b from-blue-shade-5 to-blue-shade-6/95 text-blue-shade-1 parallax-section">
         <motion.section

@@ -64,8 +64,8 @@ const Footer2 = () => {
           </div>
           <div className="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-3">
             <div>
-              <p className="font-bold text-lg text-gray-800 ">COMPANY</p>
-              <nav className="flex flex-col mt-2 font-semibold text-[17px] text-blue-shade-2/90">
+              <p className="font-bold text-xl text-gray-900 ">COMPANY</p>
+              <nav className="flex flex-col mt-2 font-normal text-[16px] text-blue-shade-2/90">
                 <ul className="leading-8">
                   <li>
                     <Link
@@ -147,8 +147,8 @@ const Footer2 = () => {
             </div>
 
             <div>
-              <p className="font-bold text-lg text-gray-800 ">SERVICES</p>
-              <nav className="flex flex-col mt-2 font-semibold text-[17px] text-blue-shade-2/90">
+              <p className="font-bold text-xl text-gray-900 ">SERVICES</p>
+              <nav className="flex flex-col mt-2 font-normal text-[16px] text-blue-shade-2/90">
                 <ul className="leading-8">
                   <li>
                     <Link
@@ -200,8 +200,8 @@ const Footer2 = () => {
             </div>
 
             <div>
-              <p className="font-bold text-lg text-gray-800 ">ARTICLES</p>
-              <nav className="flex flex-col mt-2 font-semibold text-[17px] text-blue-shade-2/90">
+              <p className="font-bold text-xl text-gray-900 ">ARTICLES</p>
+              <nav className="flex flex-col mt-2 font-normal text-[16px] text-blue-shade-2/90">
                 <ul className="leading-8">
                   <li>
                     <Link

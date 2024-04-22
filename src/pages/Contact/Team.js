@@ -120,7 +120,7 @@ const Team = () => {
                 Dream Team
               </p>
             </div>
-            <h2 className="mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-blue-shade-2 lg:text-5xl md:mx-auto">
+            <h2 className="mb-6 text-3xl font-bold tracking-tight text-blue-shade-2 lg:text-5xl md:mx-auto">
               <span className="relative inline-block">
                 <svg
                   viewBox="0 0 52 24"

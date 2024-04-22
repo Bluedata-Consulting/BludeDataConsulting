@@ -6,7 +6,7 @@ import logo from "../../src/assets/logo40.png";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isExpertiseOpen, setIsExpertiseOpen] = useState(false);
-  const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
+  // const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
   const [isInsightOpen, setIsInsightOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -20,9 +20,9 @@ const Header = () => {
       case "expertise":
         setIsExpertiseOpen(true);
         break;
-      case "industries":
-        setIsIndustriesOpen(true);
-        break;
+      // case "industries":
+      //   setIsIndustriesOpen(true);
+        // break;
       case "insight":
         setIsInsightOpen(true);
         break;
@@ -57,10 +57,10 @@ const Header = () => {
     closeOtherDropdowns("expertise");
   };
 
-  const toggleIndustriesDropdown = () => {
-    setIsIndustriesOpen(!isIndustriesOpen);
-    closeOtherDropdowns("industries");
-  };
+  // const toggleIndustriesDropdown = () => {
+  //   setIsIndustriesOpen(!isIndustriesOpen);
+  //   closeOtherDropdowns("industries");
+  // };
 
   const toggleInsightDropdown = () => {
     setIsInsightOpen(!isInsightOpen);
@@ -70,19 +70,19 @@ const Header = () => {
   const closeDropdowns = () => {
     setIsMenuOpen(false);
     setIsExpertiseOpen(false);
-    setIsIndustriesOpen(false);
+    // setIsIndustriesOpen(false);
     setIsInsightOpen(false);
   };
 
   const closeOtherDropdowns = (currentDropdown) => {
     if (currentDropdown !== "expertise") setIsExpertiseOpen(false);
-    if (currentDropdown !== "industries") setIsIndustriesOpen(false);
+    // if (currentDropdown !== "industries") setIsIndustriesOpen(false);
     if (currentDropdown !== "insight") setIsInsightOpen(false);
   };
 
   // UseRef for the dropdown containers
   const expertiseDropdownContainerRef = useRef();
-  const industriesDropdownContainerRef = useRef();
+  // const industriesDropdownContainerRef = useRef();
   const insightDropdownContainerRef = useRef();
   return (
     <div className="relative top-0 z-50">
@@ -101,11 +101,11 @@ const Header = () => {
             }}
           >
             <span className="scale-100">
-              <img src={logo} alt="" className="scale-50" />
+              <img src={logo} alt="" className="scale-75" />
             </span>
-            <span className="hidden md:inline-block font-bold text-blue-shade-2 hover:text-blue-shade-3">
+            {/* <span className="hidden md:inline-block font-bold text-blue-shade-2 hover:text-blue-shade-3">
               BLUE DATA CONSULTING
-            </span>
+            </span> */}
           </Link>
 
           <div className="hidden lg:block">
