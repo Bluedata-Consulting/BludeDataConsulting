@@ -7,15 +7,19 @@ import scale2 from "../../assets/scale2.jpg";
 import scale3 from "../../assets/scale3.jpg";
 import scale4 from "../../assets/scale4.jpg";
 import { motion } from "framer-motion";
+import bgimage from "../../assets/scaling-Team.png";
 
 const Scaling = () => {
   return (
     <div>
       <Navbar />
-      <section className="pt-48 bg-gradient-to-b from-blue-shade-4/65 to-blue-shade-5/85">
+      <section
+        className="pt-40 bg-cover"
+        style={{ backgroundImage: `url(${bgimage})` }}
+      >
         <div className="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 lg:max-w-5xl">
           <motion.h1
-            className="text-3xl font-bold leading-none text-blue-shade-3 sm:text-5xl"
+            className="text-3xl font-bold leading-none text-blue-shade-5 sm:text-5xl"
             initial={{ y: -50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1.8 }}
@@ -24,7 +28,7 @@ const Scaling = () => {
             Scaling Teams
           </motion.h1>
           <motion.p
-            className="px-8 mt-8 mb-4 text-[17px] text-gray-700"
+            className="px-8 mt-8 mb-4 text-[17px] text-blue-shade-5"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.8, delay: 2.0 }}
@@ -49,7 +53,7 @@ const Scaling = () => {
                   behavior: "smooth",
                 });
               }}
-              className="px-4 py-2 m-2 bg-blue-shade-3 hover:bg-blue-shade-2 text-[16px] font-semibold rounded-lg text-white"
+              className="px-4 py-2 m-2 bg-blue-shade-4 hover:bg-blue-shade-3 text-[16px] font-semibold rounded-lg text-white"
             >
               Get started
             </Link>
