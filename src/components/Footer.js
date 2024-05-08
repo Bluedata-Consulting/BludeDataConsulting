@@ -35,28 +35,28 @@ const Footer2 = () => {
               <Link
                 to="https://www.youtube.com/@bluedatac"
                 target="_blank"
-                className="inline-flex items-center justify-center h-10 w-10 text-blue-shade-3 rounded-full hover:text-blue-shade-4"
+                className="inline-flex items-center justify-center h-10 w-10 text-rose-700 rounded-full hover:text-rose-700/60"
               >
                 <FontAwesomeIcon icon={faYoutube} className="text-3xl" />
               </Link>
               <Link
                 to="https://www.linkedin.com/company/bluedatac/"
                 target="_blank"
-                className="inline-flex items-center justify-center h-10 w-10 text-blue-shade-3 rounded-full hover:text-blue-shade-4"
+                className="inline-flex items-center justify-center h-10 w-10 text-blue-shade-4 rounded-full hover:text-blue-shade-4/60"
               >
                 <FontAwesomeIcon icon={faLinkedin} className="text-3xl" />
               </Link>
               <Link
                 to="https://www.instagram.com/bluedatac/"
                 target="_blank"
-                className="inline-flex items-center justify-center h-10 w-10 text-blue-shade-3 rounded-full hover:text-blue-shade-4"
+                className="inline-flex items-center justify-center h-10 w-10 text-fuchsia-700 rounded-full hover:text-fuchsia-700/60"
               >
                 <FontAwesomeIcon icon={faInstagram} className="text-3xl" />
               </Link>
               <Link
                 to="https://www.facebook.com/bluedatac"
                 target="_blank"
-                className="inline-flex items-center justify-center h-10 w-10 text-blue-shade-3 rounded-full hover:text-blue-shade-4"
+                className="inline-flex items-center justify-center h-10 w-10 text-blue-shade-3 rounded-full hover:text-blue-shade-3/60"
               >
                 <FontAwesomeIcon icon={faFacebook} className="text-3xl" />
               </Link>
@@ -64,7 +64,7 @@ const Footer2 = () => {
           </div>
           <div className="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-3">
             <div>
-              <p className="font-bold text-xl text-gray-900 ">COMPANY</p>
+              <p className="font-bold text-xl text-blue-shade-1">COMPANY</p>
               <nav className="flex flex-col mt-2 font-normal text-[16px] text-blue-shade-2/90">
                 <ul className="leading-8">
                   <li>
@@ -147,7 +147,7 @@ const Footer2 = () => {
             </div>
 
             <div>
-              <p className="font-bold text-xl text-gray-900 ">SERVICES</p>
+              <p className="font-bold text-xl text-blue-shade-1 ">SERVICES</p>
               <nav className="flex flex-col mt-2 font-normal text-[16px] text-blue-shade-2/90">
                 <ul className="leading-8">
                   <li>
@@ -200,7 +200,7 @@ const Footer2 = () => {
             </div>
 
             <div>
-              <p className="font-bold text-xl text-gray-900 ">ARTICLES</p>
+              <p className="font-bold text-xl text-blue-shade-1 ">ARTICLES</p>
               <nav className="flex flex-col mt-2 font-normal text-[16px] text-blue-shade-2/90">
                 <ul className="leading-8">
                   <li>

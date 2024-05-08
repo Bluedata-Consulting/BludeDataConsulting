@@ -12,12 +12,10 @@ import ujjawal from "../../assets/ujjawal.png";
 import devendra from "../../assets/devendra.png";
 import krishna from "../../assets/krishna.png";
 import snehal from "../../assets/snehal.png";
-import arihant from "../../assets/arihant.png";
 import feny from "../../assets/feny.png";
 import madhav from "../../assets/madhav.png";
 import sageer from "../../assets/sageer.png";
 import vikash from "../../assets/vikash.png";
-import dhruvika from "../../assets/dhruvika.png";
 import { motion } from "framer-motion"; // Import Framer Motion
 
 const Team = () => {
@@ -91,16 +89,6 @@ const Team = () => {
       name: "Devendra Parmar",
       role: "Associate Data Scientist",
       image: devendra,
-    },
-    {
-      name: "Dhruvika Patel",
-      role: "Human Resources",
-      image: dhruvika,
-    },
-    {
-      name: "Arihant Jain",
-      role: "Full Stack Developer",
-      image: arihant,
     },
     {
       name: "Feny Ganeshwala",
